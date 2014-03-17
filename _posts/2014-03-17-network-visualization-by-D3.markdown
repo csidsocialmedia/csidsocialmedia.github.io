@@ -9,7 +9,6 @@ tags:
 ---
 
 This is an experiment of network visualization. I used [d3Network](http://christophergandrud.github.io/d3Network/) in R to generate this dynamic network plot. The used data set contains sequential tagging behaviors on Delicious on 2003-01-1. The data is downloaded from [PINTS](http://www.uni-koblenz-landau.de/koblenz/fb4/AGStaab/Research/DataSets/PINTSExperimentsDataSets/index_html) project. 
-
 <body> 
  <style> 
 .link {  
