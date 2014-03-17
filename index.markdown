@@ -6,7 +6,7 @@ layout: page
 
 
 
-### We are a team from the center for the study of institutional diversity (CSID) at Arizona State University. We conduct various studies concerning social media and collective attention.
+### We are a team from the Center for the Study of Institutional Diversity (CSID) at Arizona State University. We conduct various studies concerning social media and collective attention.
 
 
 

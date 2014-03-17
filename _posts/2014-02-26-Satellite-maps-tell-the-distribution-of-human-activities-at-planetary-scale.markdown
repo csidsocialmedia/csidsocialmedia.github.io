@@ -38,4 +38,4 @@ Fig. 6 Comparisons between the world (purple), U.S.(blue), and Shanghai(green) i
 
 ![7](/media/files/2014-02-26-Satellite-maps-tell-the-distribution-of -human-activities-at-planetary-scale/7.png)
 
-Fig. 7. An agent-based model on city growth that replicates the observed scaling laws of energy consumption of cities. The model is described in this paper in details.
+Fig. 7. An agent-based model on city growth that replicates the observed scaling laws of energy consumption of cities. The model is described in [this paper](http://arxiv.org/abs/1212.4914) in details.
