@@ -13,8 +13,8 @@ This is an experiment of network visualization. I used [d3Network](http://christ
 <body> 
  <style> 
 .link {  
-stroke: #666;
-opacity: 0.2;
+stroke: #666666;
+opacity: 0;
 stroke-width: 1.5px; 
 } 
 .node circle { 
