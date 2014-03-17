@@ -15,7 +15,7 @@ Read our
 
 > [blogs](http://csidsocialmedia.github.io/archive.html)
 
-to know more about our studies, or mail
+to know more about us, or mail
 
 > Lingfei DOT Wu AT asu DOT edu
 
