@@ -6,7 +6,7 @@ layout: page
 
 
 
-## Welcome to my brave new world.
+### We are a team from the center for the study of institutional diversity (CSID) at Arizona State University. We conduct various studies concerning social media and collective attention.
 
 
 

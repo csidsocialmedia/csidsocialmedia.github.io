@@ -4,8 +4,8 @@ permalink: /:year/:month/:day/:title.html
 name: "君莫要逐云追梦"
 markdown: rdiscount
 
-author: "lingfei"
-atom-baseurl: "lingfeiwu.github.io"
+author: "csidsocialmedia"
+atom-baseurl: "csidsocialmedia.github.io"
 disqus: "gopherwood"
 
 navigations:

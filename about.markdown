@@ -1,22 +1,20 @@
 ---
-title: Lingfei Wu
+title: About us
 layout: page
 ---
 
-A
-
-> Scientist | Coder | Minimalist
-
-who is working at 
+We are a team working at 
 
 > [CSID](https://csid.asu.edu)
 
-Mail 
+Read our 
+
+> [blogs](http://csidsocialmedia.github.io/archive.html)
+
+to know more about our studies, or mail
 
 > Lingfei DOT Wu AT asu DOT edu
 
-to reach me, or download 
+to reach us
 
-> [CV](http://lingfeiwu.github.io/lingfeiwu.pdf)
 
-to know more about me
