@@ -14,7 +14,7 @@ This is an experiment of network visualization. I used [d3Network](http://christ
  <style> 
 .link {  
 stroke: #666;
-opacity: 0.9;
+opacity: 0.2;
 stroke-width: 1.5px; 
 } 
 .node circle { 
