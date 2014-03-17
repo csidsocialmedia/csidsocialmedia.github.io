@@ -10,7 +10,7 @@ layout: page
 
 ### We are a team from the Center for the Study of Institutional Diversity (CSID) at Arizona State University. We conduct various studies concerning collective action and social media.
 
-
+<br><br>
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
