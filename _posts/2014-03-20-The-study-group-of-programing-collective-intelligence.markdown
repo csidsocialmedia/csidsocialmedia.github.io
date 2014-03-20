@@ -16,14 +16,14 @@ We are setting up a study group called "Programing Collective Intelligence". A m
 
 We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a reference and publish some of our practices here. We meet every friday afternoon from 2:00 pm to 5:00 pm. The topics that we will go though are listed as follows:
 
-	1. Recommending items (Mar. 28)
-	2. Discovering groups (Apr. 04)
-	3. Searching pages (Apr. 11)
-	4. Optimizing preferences (Apr. 18)
-	5. Filtering documents (Apr. 25)
-	6. Modeling decisions (May 02)
-	7. Predicting price (May 09)
-	8. Evolving intelligence (May 16)
+	+ 1. Recommending items (Mar. 28)
+	+ 2. Discovering groups (Apr. 04)
+	+ 3. Searching pages (Apr. 11)
+	+ 4. Optimizing preferences (Apr. 18)
+	+ 5. Filtering documents (Apr. 25)
+	+ 6. Modeling decisions (May 02)
+	+ 7. Predicting price (May 09)
+	+ 8. Evolving intelligence (May 16)
 
 The current members of this group include
 
