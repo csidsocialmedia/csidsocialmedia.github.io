@@ -10,6 +10,7 @@ tags:
 
 
 ![bell](/media/files/2014-03-20-The-study-group-of-programing-collective-intelligence/swarmnetwork.jpg)
+<sub>Figure by [Kyle Szostek](http://f12arc451.wordpress.com/category/kyle-szostek/)</sub>
 
 We are setting up a study group called "Programing Collective Intelligence". A major target of this group is to understand the algorithms behind the Web applications we are using everyday, such as recommendation systems on Amazon and anti-spam algorithms in Gmail. The best way to understand is to replicate. So we will do some Python programing. 
 
