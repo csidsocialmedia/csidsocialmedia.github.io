@@ -1,5 +1,5 @@
 ---
-title: Satellite maps tell the distribution of human activities at planetary scale
+title: NASA satellite maps tell the distribution of human activities at planetary scale
 layout: post
 guid: 
 tags:
