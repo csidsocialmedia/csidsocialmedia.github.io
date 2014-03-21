@@ -13,7 +13,7 @@ tags:
 
 Recently, Yelp! released a [data set](http://www.yelp.com/dataset_challenge) for academic research. This data sets includes the 335,022 reviews from 70,817 users to 15,585 businesses from greater Phoenix, AZ metropolitan area. I downloaded this data set and played around with it.  
 
-The above figure shows a very naive analysis. I select Tempe restaurants from the businesses and pinned them on Google map. The size and the color of the scatters are proportional to their popularity, i.e., stars.
+The above figure shows a very naive analysis. I select Tempe restaurants from the businesses and pinned them on [Google map](https://developers.google.com/maps/documentation/staticmaps/). The size and the color of the scatters are proportional to their popularity, i.e., stars.
 
 The mean value and standard deviation of the 501 non-Chinese restaurants are 3.44 and 0.67, respectively, and the two values for the 25 Chinese restaurants are 3.30 and 0.53, respectively. So unfortunately, the average popularity of Chinese restaurants is less than that of non-Chinese ones. Did they went to the kitchens of these Chinese restaurants ? Maybe a text mining would reveal the answer.
 
@@ -65,6 +65,7 @@ The mean value and standard deviation of the 501 non-Chinese restaurants are 3.4
         f.append([640*2/2 + nx - ncx,  640*2/2 - (ny - ncy), i[2], i[3]])
     f = np.array(f)
 	
+	# plot the figure
     fig = plt.figure(figsize=(12, 6),facecolor='white')
     cm = plt.cm.get_cmap('rainbow')
     im = np.flipud(plt.imread('/Users/csid/Downloads/googlemap.png'))
