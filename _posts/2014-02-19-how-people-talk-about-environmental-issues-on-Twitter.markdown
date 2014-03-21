@@ -85,7 +85,7 @@ In this figure the tweets are sorted in reverse-chronological order and the size
 
 The visualization is not bad, but as scientists we do not want to stop at visualizations. So we investigate two quantities for a series of keywords, that is, the average length of tweets and the normalized entropy of all words in tweets. The stopwords, such as 'a', 'the', and 'or', are removed. We use the length of tweets as a measure of the efforts users willing to spend on this issue and the entropy as a measure of the level of consensus among users. The following figure shows our result.
 
-![tweetstat](/media/files/2014-02-19-how-people-talk-about-environmental-issues-on-Twitter/tweetstat.png)
+![tweetstat](/media/files/2014-02-19-How-people-talk-about-environmental-issues-on-Twitter/tweetstat.png)
 
     def tokensFromATweet(s):
         s = s.split(' ')
