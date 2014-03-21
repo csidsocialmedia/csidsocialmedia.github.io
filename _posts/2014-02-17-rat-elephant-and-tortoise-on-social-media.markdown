@@ -11,7 +11,7 @@ tags:
 
 Social movements are different. Some burst and die within several days and some others last for years or even decades. So how can we classify and predict the types of social movements ? Here is an idea. Let's start from the temporal distribution of social movements:
 
-![bell](/media/files/2014-02-17-Rat-elephant-and-tortoise-on-social-media/bell.png)
+![bell](/media/files/2014-02-17-rat-elephant-and-tortoise-on-social-media/bell.png)
 
 	%pylab inline
 	plt.xkcd()
@@ -35,7 +35,7 @@ As seem in the above figure, a social movement is characterized by two main fact
 
 Actually, we can slightly modify the scheme of the above figure and turn it into something more understandable:
 
-![rect](/media/files/2014-02-17-Rat-elephant-and-tortoise-on-social-media/rect.png)
+![rect](/media/files/2014-02-17-rat-elephant-and-tortoise-on-social-media/rect.png)
 
     fig = plt.figure(figsize=(8, 6),facecolor='white')
     ax = fig.add_subplot(111)
@@ -57,7 +57,7 @@ Now we can easily tell the differences between social movements. There are rat, 
 
 How to probe into the mesoscopic dynamics of the social movements, concerning their types ? One way to do this is to look into the flow networks of collective attention. Let's consider social movement as "Collaborative Narrative" in a "word space".  Participants enter into this space and generate individual clickstreams (a sequence of words) to express their statement. The individual clickstreams (statements of individual participants) and the background structure (opinion climate) interact with each other and evolves together, leading to the emergence of consensus. It is not always a bad thing that a social movement decays - the reason may be that its statement has already been widely accepted. 
 
-![network](/media/files/2014-02-17-Rat-elephant-and-tortoise-on-social-media/network.png)
+![network](/media/files/2014-02-17-rat-elephant-and-tortoise-on-social-media/network.png)
 
 	fig = plt.figure(figsize=(6, 6),facecolor='white')
     ax = fig.add_subplot(111)
