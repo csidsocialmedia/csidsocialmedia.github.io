@@ -10,9 +10,9 @@ tags:
 
 In a previous blog we gave the following plots as a framework to study social movements online.
 
-![bell](/media/files/2014-02-17-rat-elephant-and-tortoise-on-social-media/bell.png)
+![bell](/media/files/2014-02-17-Rat-elephant-and-tortoise-on-social-media/bell.png)
 
-![rect](/media/files/2014-02-17-rat-elephant-and-tortoise-on-social-media/rect.png)
+![rect](/media/files/2014-02-17-Rat-elephant-and-tortoise-on-social-media/rect.png)
 
 In this blog we will present the result of our exploration.
 

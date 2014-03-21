@@ -12,7 +12,7 @@ tags:
 
 If you are a fan of our blog - I know most of you are not, because our blog is still a baby, but I do hope you will be obsessed by her at some point - you will remember this plot:
 
-![network](/media/files/2014-02-17-rat-elephant-and-tortoise-on-social-media/network.png)
+![network](/media/files/2014-02-17-Rat-elephant-and-tortoise-on-social-media/network.png)
 
 Yes, this is a blueprint suggested in our previous blog to study social movements on Twitter. In this blog, we will show you how we turn this idea into an empirical study.
 
@@ -20,7 +20,7 @@ First of all, we collect 'popular tweets' concerning a keyword using [Tweet API]
 
 For example, by querying 'sustainability', we get  a dozen of most relevant tweets. Including ID, tweet text, and time, etc. We do some visualization work to generate the figure below:
 
-![tweets](/media/files/2014-02-19-how-people-talk-about-environmental-issues-on-Twitter/tweets.png)
+![tweets](/media/files/2014-02-19-How-people-talk-about-environmental-issues-on-Twitter/tweets.png)
 
     # import modules
 	from twython import Twython
@@ -126,9 +126,9 @@ Interestingly,  the most controversial issue is aways carbon related. Meanwhile,
 
 We did not forget our design of the tweet networks, in which the nodes are the words and the edges are sequential usage of two words. We construct the networks from collected tweets, visualize them, and sort them according to the number of nodes as follows:
 
-![tweetnetworks1](/media/files/2014-02-19-how-people-talk-about-environmental-issues-on-Twitter/tweetnetworks1.png)
+![tweetnetworks1](/media/files/2014-02-19-How-people-talk-about-environmental-issues-on-Twitter/tweetnetworks1.png)
 
-![tweetnetworks2](/media/files/2014-02-19-how-people-talk-about-environmental-issues-on-Twitter/tweetnetworks2.png)
+![tweetnetworks2](/media/files/2014-02-19-How-people-talk-about-environmental-issues-on-Twitter/tweetnetworks2.png)
 
 	def plotQueryNetwork(keyword):
         seqs=[tokensFromATweet(i[1]) for i in twdic[keyword]]
