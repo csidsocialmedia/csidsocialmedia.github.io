@@ -19,13 +19,13 @@ The mean value and standard deviation of the 501 non-Chinese restaurants are 3.4
 
 So what are the "best" and the "worst" Chinese restaurants ? I found [Miu’s Cuisine](http://www.yelp.com/biz/mius-cuisine-tempe) that has 75 votes and 4 stars. I visited their site and discovered this:
 
-![dry_sauteed_string_beans](2014-03-21-Yelp-data-show-the-popularity-of-Tempe-restaurants/dry_sauteed_string_beans.jpg)
+![dry_sauteed_string_beans](media/files/2014-03-21-Yelp-data-show-the-popularity-of-Tempe-restaurants/dry_sauteed_string_beans.jpg)
 
 This is dry sauteed string beans. Classical Sichuan (a southeast province of China) flavor. I like it. 
 
 I also found [Genghis Grill](http://www.yelp.com/biz/genghis-grill-tempe-5) that has 18 votes and 2.5 satrs - it is updated to 3.5 stars now. They provide this 
 
-![scallops_bacon_calamari_curry_sauce](2014-03-21-Yelp-data-show-the-popularity-of-Tempe-restaurants/scallops_bacon_calamari_curry_sauce.jpg) 
+![scallops_bacon_calamari_curry_sauce](media/files/2014-03-21-Yelp-data-show-the-popularity-of-Tempe-restaurants/scallops_bacon_calamari_curry_sauce.jpg) 
 
 The annotation said that it is a mixture of "scallops, bacon, calamari, and curry sauce". as a Chinese, I have never seem it in my life and I am not sure I want to try it.
 
