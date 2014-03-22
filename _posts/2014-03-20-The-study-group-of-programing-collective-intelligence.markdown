@@ -34,6 +34,7 @@ The current members of this group include
 	+ Oyita
 	+ Komi Messan
 	+ Kenny Salau
+	+ Daniel Burkow
 
 
 During the meetings, we will divide into two groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
