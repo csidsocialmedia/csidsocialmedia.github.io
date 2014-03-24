@@ -30,11 +30,12 @@ The current members of this group include
 
 	+ Lingfei Wu (organizer, Lingfei Dot Wu At asu DOT edu)
 	+ Jordan Bates
-	+ Moon Zhang
-	+ Oyita
+	+ Moon Zhang 
+	+ Oyita Udiani 
 	+ Komi Messan
 	+ Kenny Salau
 	+ Daniel Burkow
+	+ Diego Chowell
 
 
 During the meetings, we will divide into two groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
