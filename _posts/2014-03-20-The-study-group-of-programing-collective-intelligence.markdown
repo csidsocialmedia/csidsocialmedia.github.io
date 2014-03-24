@@ -36,6 +36,7 @@ The current members of this group include
 	+ Kenny Salau
 	+ Daniel Burkow
 	+ Diego Chowell
+	+ Na Zhang
 
 
 During the meetings, we will divide into two groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
