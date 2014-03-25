@@ -27,19 +27,23 @@ We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a r
 
 The current members of this group include
 
+	+ Lingfei Wu (organizer, Lingfei Dot Wu At asu DOT edu, post-doc in CSID)
+	+ Kehinde R Salau (post-doc in th Department of Mathematics, University of Arizona)
+	+ Oyita Udiani (Applied Mathematics for the Life + Social Sciences, SHESC)
+	+ Jordan Bates (the same as above)
+	+ Komi Messan (the same as above)
+	+ Daniel Burkow (the same as above)
+	+ Diego Chowell (the same as above)
+	+ Na Zhang (the same as above)
+	+ Moon Zhang (Science in Business Analytics, W. P. Carey)
+	+ Shan Yuan (the same as above)
+	+ Linghuan zeng (the same as above)
 
-	+ Lingfei Wu (organizer, Lingfei Dot Wu At asu DOT edu)
-	+ Jordan Bates
-	+ Moon Zhang 
-	+ Oyita Udiani 
-	+ Komi Messan
-	+ Kenny Salau
-	+ Daniel Burkow
-	+ Diego Chowell
-	+ Na Zhang
+<sub>CSID stands for the Center for the Study of Institutional Diversity</sub>
+<sub>SHESC stands for School of Human Evolution and Social Change</sub>
+<sub>W. P. Carey stands for W. P. Carey School of Business</sub>
 
-
-During the meetings, we will divide into two groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
+During the meetings, we will divide into three or more groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
 
 Let's Rock!
 
