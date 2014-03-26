@@ -8,9 +8,7 @@ tags:
 ---
 
 
-Written in 1787, ratified in 1788, and in operation since 1789, the United States Constitution is the world’s longest surviving written charter of government [cite](http://www.senate.gov/civics/constitution_item/constitution.htm#amendments). There are 27 amendments to the Constitution . Approximately 11,539 measures have been proposed to amend the Constitution from 1789 through January 2, 2013. [cite](http://www.senate.gov/pagelayout/reference/three_column_table/measures_proposed_to_amend_constitution.htm)
-
-We can download the full text of the US constitution and its 27 amendments from [here](http://www.usconstitution.net/const.txt) and conduct a simple analysis on its evolution.
+Written in 1787, ratified in 1788, and in operation since 1789, the United States Constitution is the world’s longest surviving written charter of government [cite](http://www.senate.gov/civics/constitution_item/constitution.htm#amendments). I downloaded the full text of the US constitution and its 27 amendments from [here](http://www.usconstitution.net/const.txt) and conducted a simple analysis on its evolution.
 
 ###Who is more important ?  President, Congress, or Senate ?
 
