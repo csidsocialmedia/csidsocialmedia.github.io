@@ -27,4 +27,7 @@ This figure gives a very intuitive image of the importance rank.
 
 Approximately 11,539 measures have been proposed to amend the Constitution in more than two hundred years (1789 ~ 2012), but we know that only 27 amendments were accepted [soruce](http://www.senate.gov/pagelayout/reference/three_column_table/measures_proposed_to_amend_constitution.htm). So the chance of a proposal to amend the consitution being accepted is 0.2%. Considering the dramatic change of our society in the past two hundred years, this incredibly low rate reflects that the consitution is very stable.  
 
+![growth](/media/files/2014-03-25-The-Evolution-of-the-US-Constitution/growth.png)
+
+Another question is, if 
 
