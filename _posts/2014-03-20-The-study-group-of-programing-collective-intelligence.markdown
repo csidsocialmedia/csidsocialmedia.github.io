@@ -14,7 +14,7 @@ tags:
 
 We are setting up a study group called "Programing Collective Intelligence". A major target of this group is to understand the algorithms behind the Web applications we are using everyday, such as recommendation systems on Amazon and anti-spam algorithms in Gmail. The best way to understand is to replicate. So we will do some Python programing. 
 
-We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a reference and publish some of our practices here. We meet every friday afternoon from 2:00 pm to 5:00 pm at [Ostom Lab](https://csid.asu.edu/ostrom-lab/elinor-ostrom-multi-method-lab). The topics that we will go though are listed as follows:
+We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a reference and publish some of our practices here. We meet every friday afternoon from 2:00 pm to 5:00 pm at [Ostrom Lab](https://csid.asu.edu/ostrom-lab/elinor-ostrom-multi-method-lab). The topics that we will go though are listed as follows:
 
 	+ 1. Recommending items (Mar. 28)
 	+ 2. Discovering groups (Apr. 04)
