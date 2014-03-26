@@ -6,7 +6,7 @@ markdown: rdiscount
 
 author: "csidsocialmedia"
 atom-baseurl: "csidsocialmedia.github.io"
-disqus: "linfeiwu"
+disqus: "lingfeiwu"
 
 navigations:
   - title: Archive
