@@ -24,7 +24,7 @@ We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a r
 	+ 6. ------------------- (May 02)
 	+ 7. Modeling decisions (May 09)
 	+ 8. Predicting price (May 16)
-	+ 9. Evolving intelligence (May 24)
+	+ 9. Evolving intelligence (May 23)
 
 The current members of this group include
 
