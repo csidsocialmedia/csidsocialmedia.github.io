@@ -105,9 +105,7 @@ In future, we can consider a "law correction" tool for lawyers as the popular [s
 
 ###Reference
 
-My idea for analyzing the evolution of rules is inspired by the following interesting book:
-
-![book](/media/files/2014-03-25-The-Evolution-of-the-US-Constitution/book.png)
+My idea for analyzing the evolution of rules is inspired by the following interesting book: [The Dynamics of Rules](http://www.sup.org/book.cgi?id=388).
 
 ###supplementary materials: Python codes
 
