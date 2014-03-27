@@ -103,6 +103,12 @@ In more comprehensive analyis, the frequencies of the words should be cosidered.
 In future, we can consider a "law correction" tool for lawyers as the popular [spell correction](http://norvig.com/spell-correct.html) tools, to dispaly the revisions of laws using [tree](http://notabilia.net) or [wordtree](http://hint.fm/papers/wordtree_final2.pdf), or measure the increase of information in law evolution by [KL distance](http://en.wikipedia.org/wiki/Kullback–Leibler_divergence) or [information-thoretic cost](http://www.sciencemag.org/content/suppl/2007/01/08/1136800.DC1/Frey.SOM.pdf).
 
 
+###Reference
+
+My idea for analyzing the evolution of rules is inspired by the following interesting book:
+
+![book](/media/files/2014-03-25-The-Evolution-of-the-US-Constitution/book.png)
+
 ###supplementary materials: Python codes
 
     import numpy as np
