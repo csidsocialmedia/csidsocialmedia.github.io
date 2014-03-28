@@ -1,5 +1,5 @@
 ---
-title: Correcting Spelling PCIgourp
+title: Correcting Spelling PCIgroup
 layout: post
 guid:
 tags:
