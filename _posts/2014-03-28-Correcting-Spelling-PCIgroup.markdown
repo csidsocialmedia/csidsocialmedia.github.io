@@ -1,5 +1,5 @@
 ---
-title: Correcting Spelling
+title: Correcting Spelling PCIgourp
 layout: post
 guid:
 tags:
@@ -65,7 +65,7 @@ The math, modules, functions, and data structures used in the above example
 
 1. Math: Bayesian formula
 
-![Bayes_Theorem](/media/files/2014-03-20-The-study-group-of-programing-collective-intelligence/Bayes_Theorem.jpg)
+![Bayes_Theorem](/media/files/2014-03-28-Correcting-Spelling-PCIgroup/Bayes_Theorem.jpg)
 
 2. Modules: re, collections, urllib2
 
