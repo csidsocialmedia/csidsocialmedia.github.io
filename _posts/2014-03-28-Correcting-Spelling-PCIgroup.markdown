@@ -6,15 +6,21 @@ tags:
   - PCI group
 ---
 
+
 ### 1. Warm up and self-introduction 
+
 
 Name, major, grade, programing experience, motivation to join our group/project at hand
 
+
 ### 2. About me
+
 
 PowerPoint
 
+
 ### 3. My suggestions of learning data mining/machine learning (for non-CS students)
+
 
     1. Small projects driven;
 	2. Do not talk about concepts/formulas unless you know how to turn them into codes;
@@ -22,9 +28,12 @@ PowerPoint
 	4. When you can always get things done, try to write more elegant codes.
 	
 
+
 ### 4. Check your developing evironment of Python (IPython/Pythonxy)
 
+
 ### 5. A spelling corrector in 22 lines of Python codes
+
 
 The following code was wrote by [Peter Norvig](http://norvig.com/spell-correct.html) and was revised slightly by me.
 
@@ -59,6 +68,7 @@ The following code was wrote by [Peter Norvig](http://norvig.com/spell-correct.h
         candidates = known([word]) or known(edits1(word)) or known_edits2(word) or [word]
         return max(candidates, key=NWORDS.get)
 
+
 ### 6. Python programming skills
 
 The math, modules, functions, and data structures used in the above example
@@ -72,6 +82,7 @@ The math, modules, functions, and data structures used in the above example
 3. Data structures: list, dictionary, default dictionary
 
 4. Functions: basic usage, nest functions, for loop 
+
 
 ### 7. Q&A
 
