@@ -8,11 +8,11 @@ tags:
 ---
 
 
-Participating in a research project supported by China Mobile ([Beijing branch](http://www.chinamobileltd.com/en/global/home.php)) and the [Thinkerwork](http://thinkerworks.cn) consulting compary, we got access to the mobile data of 10,000 users (randomly sampled from 20 million users). Here we present some results of data explorations in the data set 20131231. 
+Participating in a research project supported by a Chinese Mobile company, we got access to the mobile data of 10,000 users (randomly sampled from 20 million users). Here we present some results of data explorations in the data set 20131231. 
 
 ### The spatial and traffic distribution of base stations
 
-The distribution of 14909 base stations:
+The distribution of 14,909 base stations:
 
 ![basemap](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/basemap.png)
 
