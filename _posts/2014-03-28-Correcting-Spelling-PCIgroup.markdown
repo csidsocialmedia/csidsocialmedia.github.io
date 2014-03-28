@@ -76,6 +76,8 @@ The math, modules, functions, and data structures used in the above example
 1. Math: Bayesian formula
 
 ![Bayes_Theorem](/media/files/2014-03-28-Correcting-Spelling-PCIgroup/Bayes_Theorem.jpg)
+[source](http://en.wikipedia.org/wiki/File:Bayes%27_Theorem_MMB_01.jpg)
+
 
 2. Modules: re, collections, urllib2
 
