@@ -15,8 +15,7 @@ Name, major, grade, programing experience, motivation to join our group/project 
 
 ### 2. About me
 
-
-PowerPoint
+![me.pptx](/media/files/2014-03-28-Correcting-Spelling-PCIgroup/me.pptx)
 
 
 ### 3. My suggestions of learning data mining/machine learning (for non-CS students)
