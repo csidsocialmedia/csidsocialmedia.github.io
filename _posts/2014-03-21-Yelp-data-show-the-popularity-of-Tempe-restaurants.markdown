@@ -1,7 +1,8 @@
 ---
 title: Yelp data show the popularity of Tempe restaurants
 layout: post
-guid: 
+guid:
+comments: true
 tags:
   - collective intelligence
   - machine learning

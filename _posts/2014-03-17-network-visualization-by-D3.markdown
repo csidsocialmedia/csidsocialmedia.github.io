@@ -2,6 +2,7 @@
 title: Network visualization by D3
 layout: post
 guid: 
+comments: true
 tags:
   - network
   - visualization

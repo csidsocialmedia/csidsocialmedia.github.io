@@ -2,6 +2,7 @@
 title: The study group of programing collective intelligence
 layout: post
 guid: 
+comments: true
 tags:
   - collective intelligence
   - machine learning

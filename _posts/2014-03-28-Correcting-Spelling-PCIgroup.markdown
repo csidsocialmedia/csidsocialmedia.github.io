@@ -2,6 +2,7 @@
 title: Correcting Spelling PCIgroup
 layout: post
 guid:
+comments: true
 tags:
   - PCI group
 ---

@@ -1,7 +1,8 @@
 ---
 title: How people talk about environmental issues on Wikipeida ?
 layout: post
-guid: 
+guid:
+comments: true
 tags:
   - social movement
   - environment

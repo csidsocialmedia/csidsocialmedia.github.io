@@ -2,6 +2,7 @@
 title: The daily mobility of Beijing residents
 layout: post
 guid:
+comments: true
 tags:
   - evolution
   - data mining

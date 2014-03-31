@@ -1,7 +1,8 @@
 ---
 title: The Evolution of the US Constitution
 layout: post
-guid: 
+guid:
+comments: true
 tags:
   - evolution
   - data mining
