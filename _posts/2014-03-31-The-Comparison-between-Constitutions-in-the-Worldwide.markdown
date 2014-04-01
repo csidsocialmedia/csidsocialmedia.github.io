@@ -129,20 +129,6 @@ To display the results, we used the [Geochart API](https://developers.google.com
     open( "/Users/csid/Downloads/test.html", "w" ).write(htmltext)
 	
 
-If we open the generated html page, we see an interactive map, in which different countries are plotted in different colors.  In writing this blog with [markdown](https://daringfireball.net/projects/markdown/) language, I took the advantage of this language and inseted the html scripts to display the plot at the end of this blog.
-
-Some interesting assumptions can be obtained by observing the plot. There are courties which are close to each other in geological distance and also are similar with each other in terms of constitution. They are:
-
-1. China, Laos, and Vietnam (note that they are/were communist countries);
-2. Canada and the U.S. (The North America area);  
-3. India and Pakistan (South Asia);
-4. East Europe countries including Russia.
-
-I will leave more fun for the reader to discover more interesting things from this plot (such as the clusters in the middle east). But before we end this exploration, I would like to mention a surpring fact that is related to the [current news](http://www.bbc.com/news/world-europe-26822475) in Crimea, Ukraine.  Guess who is the only other country/region which share the similar constitutions with Ukraine in our data set? 
-
-Chechnya. You can not find this "country" in the above map because it is now already a part of Russia.
-
-
 
 <script type='text/javascript' src='https://www.google.com/jsapi'></script>
 <script type='text/javascript'>
@@ -165,4 +151,17 @@ chart.draw(data, options);
 <div id="chart_div" style="width: 700px; height: 400px;"></div>
 </body>
 
+
+If we open the generated html page, we see an interactive map, in which different countries are plotted in different colors.  In writing this blog with [markdown](https://daringfireball.net/projects/markdown/) language, I took the advantage of this language and inseted the html scripts to display the above plot.
+
+Some interesting assumptions can be obtained by observing the plot. There are courties which are close to each other in geological distance and also are similar with each other in terms of constitution. They are:
+
+1. China, Laos, and Vietnam (note that they are/were communist countries);
+2. Canada and the U.S. (The North America area);  
+3. India and Pakistan (South Asia);
+4. East Europe countries including Russia.
+
+I will leave more fun for the reader to discover more interesting things from this plot (such as the clusters in the middle east). But before we end this exploration, I would like to mention a surpring fact that is related to the [current news](http://www.bbc.com/news/world-europe-26822475) in Crimea, Ukraine.  Guess who is the only other country/region which share the similar constitutions with Ukraine in our data set? 
+
+Chechnya. You can not find this "country" in the above map because it is now already a part of Russia.
 
