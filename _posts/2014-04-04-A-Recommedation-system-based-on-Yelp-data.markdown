@@ -12,11 +12,23 @@ Recently, Yelp! released a [data set](http://www.yelp.com/dataset_challenge) for
 
 Several functions (eg., topMatches and calculateSimilarItems) used here are cited and revised from Chapter 2 of [this book](http://shop.oreilly.com/product/9780596529321.do). And we should make some corrections before using the code of the book:
 
-1. On page 21, line 4, "for p2 in get_urlposts(p1['href'])" should be "for p2 in get_urlposts(p1['url'])" . This is because the site delicious has changed the variable name in API.
+	+ 1. On page 21, line 4, "for p2 in get_urlposts(p1['href'])" should be "for p2 in 
+	get_urlposts(p1['url'])". This is because the site delicious has changed the variable 
+	name in API.
+	
+	+ 2. On page 21, line 5, after "user=p2['user']" we'd better add "if user:" and also 
+	adjust the indent of the following lines. This is because some times the API will 
+	return a empty space of user, which we do not want to consider in analysis. 
+	
+	+ 3. The user-based Delicious recommendation engine may not work well if we are 
+	calculating the similarit between two users who do not share any common url.
 
-2. On page 21, line 5, after "user=p2['user']" we'd better add "if user:" and also adjust the indent of the following lines. This is because some times the API will return a empty space of user, which we do not want to consider in analysis. 
+The idea of user-based recommedation: an typical user-based recommending algorithm calculates the similarity between all pairs of users (from their shared items), and predicts the preference (e.g., a rate between 1~5 ) of a user  i  on an item using the expected value of the rates of other users j weighted by the similarity between i and j.  Therefore, if a user rates on more resources, he will have impact on more people, because the similarity weights carried by his rates are higher (he shares common items with more users). The above idea can be expressed as
 
-3. The user-based Delicious recommendation engine may not work well if we are calculating the similarit between two users who do not share any common url.
+ \$\$ x^{2} + y^{2} = z^{2} \$\$
+
+There two types of recommendatons, item-based and user-based. They share the similar idea of estimating the epected value of preference from a distribution. (to be continued) 
+ 
 
 Python codes are listed as follows:
 
