@@ -17,8 +17,8 @@ Several functions (eg., topMatches and calculateSimilarItems) used here are cite
 2. On page 21, line 5, after "user=p2['user']" we'd better add "if user:" and also adjust the indent of the following lines. This is because some times the API will return a empty space of user, which we do not want to consider in analysis. 
 
 3. The user-based Delicious recommendation engine may not work well if we are calculating the similarit between two users who do not share any common url.
- 
 
+Python codes are listed as follows:
 
     #modules
     import re
