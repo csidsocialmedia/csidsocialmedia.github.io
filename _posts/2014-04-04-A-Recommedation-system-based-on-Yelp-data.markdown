@@ -25,7 +25,9 @@ Several functions (eg., topMatches and calculateSimilarItems) used here are cite
 
 The idea of user-based recommedation: an typical user-based recommending algorithm calculates the similarity between all pairs of users (from their shared items), and predicts the preference (e.g., a rate between 1~5 ) of a user  i  on an item using the expected value of the rates of other users j weighted by the similarity between i and j.  Therefore, if a user rates on more resources, he will have impact on more people, because the similarity weights carried by his rates are higher (he shares common items with more users). The above idea can be expressed as
 
- \$\$ x^{2} + y^{2} = z^{2} \$\$
+$$
+logit(Y_{ij} = 1) = ln(\frac{p_{ij}}{1-p_{ij}}) = {\theta }^{T} \mathbf{\delta} [g(\mathbf{y}, \mathbf{X})]_{ij}
+$$
 
 There two types of recommendatons, item-based and user-based. They share the similar idea of estimating the epected value of preference from a distribution. (to be continued) 
  

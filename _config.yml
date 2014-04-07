@@ -1,9 +1,7 @@
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 permalink: /:year/:month/:day/:title.html
 name: "君莫要逐云追梦"
-markdown: rdiscount
-
 author: "csidsocialmedia"
 atom-baseurl: "csidsocialmedia.github.io"
 disqus: "lingfeiwu"
