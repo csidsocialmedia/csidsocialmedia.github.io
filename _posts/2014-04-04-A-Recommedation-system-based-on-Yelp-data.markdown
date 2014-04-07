@@ -5,7 +5,7 @@ guid:
 comments: true
 tags:
   - data mining
-  - PCIgroup
+  - PCI group
 ---
 
 Recently, Yelp! released a [data set](http://www.yelp.com/dataset_challenge) for academic research. This data sets includes the 335,022 reviews from 70,817 users to 15,585 businesses from greater Phoenix, AZ metropolitan area. In [this post](http://csidsocialmedia.github.io/2014/03/21/Yelp-data-show-the-popularity-of-Tempe-restaurants.html) I analyzed the spatial distribution of restaurants. Now we are going to construct a recommending engine using this data set.
