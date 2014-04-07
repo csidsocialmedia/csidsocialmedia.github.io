@@ -17,16 +17,16 @@ We are setting up a study group called "Programing Collective Intelligence". A m
 
 We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a reference and publish some of our practices here. We meet every friday afternoon from 2:00 pm to 5:00 pm at [Ostrom Lab](https://csid.asu.edu/ostrom-lab/elinor-ostrom-multi-method-lab). The topics that we will go though are listed as follows:
 
-	+ 1. [Correcting spellings](http://csidsocialmedia.github.io/2014/03/28/Correcting-Spelling-PCIgroup.html) (Mar. 28)
-	+ 2. [Recommending items](http://csidsocialmedia.github.io/2014/04/04/A-Recommedation-system-based-on-Yelp-data.html) (Apr. 04)
-	+ 3. Discovering groups (Apr. 11)
-	+ 4. Searching pages (Apr. 18)
-	+ 5. Optimizing preferences (Apr. 25)
-	+ 6. ------------------- (May 02)
-	+ 7. Filtering documents (May 09)
-	+ 8. Modeling decisions (May 16)
-	+ 9. Predicting price (May 23)
-	+ 10. Evolving intelligence (May 30)
++ 1. [Correcting spellings](http://csidsocialmedia.github.io/2014/03/28/Correcting-Spelling-PCIgroup.html) (Mar. 28)
++ 2. [Recommending items](http://csidsocialmedia.github.io/2014/04/04/A-Recommedation-system-based-on-Yelp-data.html) (Apr. 04)
++ 3. Discovering groups (Apr. 11)
++ 4. Searching pages (Apr. 18)
++ 5. Optimizing preferences (Apr. 25)
++ 6. ------------------- (May 02)
++ 7. Filtering documents (May 09)
++ 8. Modeling decisions (May 16)
++ 9. Predicting price (May 23)
++ 10. Evolving intelligence (May 30)
 
 The current members of this group include
 
