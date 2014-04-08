@@ -23,13 +23,13 @@ Several functions (eg., topMatches and calculateSimilarItems) used here are cite
 	+ 3. The user-based Delicious recommendation engine may not work well if we are 
 	calculating the similarit between two users who do not share any common url.
 
-The idea of user-based recommedation: an typical user-based recommending algorithm calculates the similarity between all pairs of users (from their shared items), and predicts the preference (e.g., a rate between 1~5 ) of a user  i  on an item using the expected value of the rates of other users j weighted by the similarity between i and j.  Therefore, if a user rates on more resources, he will have impact on more people, because the similarity weights carried by his rates are higher (he shares common items with more users). The above idea can be expressed as
+The idea of user-based recommedation: an typical user-based recommending algorithm calculates the similarity between all pairs of users (from their shared items), and predicts the preference (e.g., a rate between 1~5 ) of a user  j  on an item using the expected value of the rates of other users i weighted by the similarity between i and j.  Therefore, if a user rates on more resources, he will have impact on more people, because the similarity weights carried by his rates are higher (he shares common items with more users). The above idea can be expressed as
 
 $$
-logit(Y_{ij} = 1) = ln(\frac{p_{ij}}{1-p_{ij}}) = {\theta }^{T} \mathbf{\delta} [g(\mathbf{y}, \mathbf{X})]_{ij}
+\sum_{i\neq j}^{N}r_{i}S_{ij}
 $$
 
-There two types of recommendatons, item-based and user-based. They share the similar idea of estimating the epected value of preference from a distribution. (to be continued) 
+There two types of recommendatons, item-based and user-based. They share the similar idea of estimating the epected value of preference from a distribution. So the above formula is also applicable in item-based recommendations, except that now i and j are items and not users. In particular, the euqation records the the expected value of the rates of items i given by the same user, weighted by the similarities between item i and the target item j. To obatian this value, a item-item similarity matrix derived from the pearson correlation (or other measurements of distance) between items in terms of users should be prepared in advance. As the item-item similarity matrix is relatively stable, this method is much faster than the user-based recommendations.
  
 
 Python codes are listed as follows:
