@@ -74,9 +74,11 @@ The math, modules, functions, and data structures used in the above example
 
 1. Math: Bayesian formula
 
-![Bayes_Theorem](/media/files/2014-03-28-Correcting-Spelling-PCI-group/Bayes_Theorem.jpg)
-[source](http://en.wikipedia.org/wiki/File:Bayes%27_Theorem_MMB_01.jpg)
+$$
+P(c_{i}|w)=\frac{P(w|c_{i})P(c_{i})}{P(w)}
+$$
 
+in which P(w) is the probability of writing down a wrong word, and P(r) is the probability of the correct word. For each incorrect word, we will use this formula to calculate the prababilities of different correct words, and select the one with highest value.
 
 2. Modules: re, collections, urllib2
 
