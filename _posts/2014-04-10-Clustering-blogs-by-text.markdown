@@ -8,6 +8,13 @@ tags:
   - data mining
 ---
 
+We will collect the blogs of 23 political writers and clutser them by their usage of words. Here are the result of hierarchical clustering (blue for right wing and red for left wing). It turns out that pearson correlation as the distance gives us more reasonbale result, although the current result is still far from a satisfying level.
+
+![blogclust_pearson](/media/files/2014-04-10-Clustering-blogs-by-text/blogclust_pearson.png)
+The clustering result using pearson correlation.
+
+![blogclust_cosine](/media/files/2014-04-10-Clustering-blogs-by-text/blogclust_cosine.png)
+The clustering result using cosine distance.
 
 
     # import module
