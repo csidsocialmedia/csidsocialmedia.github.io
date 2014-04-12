@@ -173,6 +173,8 @@ The clustering result using cosine distance.
 
 
 ![wordfrequency](/media/files/2014-04-10-Clustering-blogs-by-text/wordfrequency.png)
+We drop the most common words and uncommon words and use the rest as features.
+
 
 # Hierarchical clustering authors by word frequencies (features)
 
