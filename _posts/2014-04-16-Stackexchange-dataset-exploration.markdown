@@ -10,7 +10,7 @@ tags:
 
 1. The evolution of monthly number of Qs and As in 110 sites
 
-![QAbalance](/media/files/2014-04-16-Stackexchange-dataset-exploration/QAbalance.png)
+![QAbalanceT](/media/files/2014-04-16-Stackexchange-dataset-exploration/QAbalanceT.png)
 
 The upper and lower bound of a "band" show the number of answers and questions of a site, respectively. The increasing trends are plotted in the blue color and the decreasing trends are plotted in the red color. The increase/decrease of trends are quantifed by the positive/negative regression coefficient beta of (N of Qs + N of As)/2 on time. 56 of the sites have values of beta > 0 and 52 of them have values of beta < 0. Two extreme cases, "stackoveflow.com" (grows fastest) and "italian.stackexchange.com" (decays fastest) are shown in the plot.
 
@@ -18,7 +18,7 @@ The upper and lower bound of a "band" show the number of answers and questions o
 3. The statistics of answer rate and waiting time of the 110 sites
 
 
-![waitingT.png](/media/files/2014-04-16-Stackexchange-dataset-exploration/waitingT.png.png)
+![waitingT](/media/files/2014-04-16-Stackexchange-dataset-exploration/waitingT.png)
 
 
 
