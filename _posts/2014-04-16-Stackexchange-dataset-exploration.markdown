@@ -21,6 +21,16 @@ The upper and lower bound of a "band" show the number of answers and questions o
 ![waitingT](/media/files/2014-04-16-Stackexchange-dataset-exploration/waitingT.png)
 
 
+4. The daily distributions of answers in two sites and the increase of inequality in answering across 110 sites
+
+![zipfdist](/media/files/2014-04-16-Stackexchange-dataset-exploration/zipfdist.png)
+
+
+![zipfExponentTrend1](/media/files/2014-04-16-Stackexchange-dataset-exploration/zipfExponentTrend1.png)
+
+
+![zipfExponentTrend2](/media/files/2014-04-16-Stackexchange-dataset-exploration/zipfExponentTrend2.png)
+
 
 3. The daily attention flow between sites
 
