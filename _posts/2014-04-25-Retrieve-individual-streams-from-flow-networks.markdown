@@ -13,9 +13,6 @@ tags:
 The topology of real-world networks have been extensively studied, but the flow structure of networks has not attracted enough attention it deserves. In discussing flow structure we care about the directed, long-distance interactions between nodes and communities, which have strong applied meanings but are rarely covered by current network studies. 
 
 <body>
-
-<!DOCTYPE html>
-<meta charset="utf-8">
 <style>
 
 .link {
