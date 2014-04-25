@@ -146,25 +146,25 @@ function transform(d) {
 
 The above figure shows a flow network demo. This flow network is an aggrenation of several streams. A stream is generated when a users of stackoverflow.com answer a series of questions sequentially, so the flow structure shows the interaction between users and questions. The above figure is contructre from the following data set:
 
-<sub>
-user: 26624, time: 03:40:31, Question ID: 1983425
-user: 89771, time: 22:53:24, Question ID: 1989888
-user: 57348, time: 04:47:02, Question ID: 1987883
-user: 14343, time: 18:42:11, Question ID: 1989251
-user: 20489, time: 23:43:40, Question ID: 1987833
-user: 24587, time: 11:18:05, Question ID: 1988359
-user: 8206, time: 07:42:38, Question ID: 1988127
-user: 8206, time: 07:48:49, Question ID: 1988091
-user: 8206, time: 08:13:45, Question ID: 1988160
-user: 8206, time: 08:45:35, Question ID: 1988196
-user: 8206, time: 09:42:33, Question ID: 1988248
-user: 8206, time: 13:54:18, Question ID: 1988642
-user: 8206, time: 14:20:06, Question ID: 1988665
-user: 8206, time: 14:34:48, Question ID: 1988728
-user: 35501, time: 08:00:43, Question ID: 1988049
-user: 165905, time: 19:23:57, Question ID: 1989255
-user: 79891, time: 12:23:36, Question ID: 1980082
-</sub>
+
++ 1. user: 26624, time: 03:40:31, Question ID: 1983425
++ 2. user: 89771, time: 22:53:24, Question ID: 1989888
++ 3. user: 57348, time: 04:47:02, Question ID: 1987883
++ 4. user: 14343, time: 18:42:11, Question ID: 1989251
++ 5. user: 20489, time: 23:43:40, Question ID: 1987833
++ 6. user: 24587, time: 11:18:05, Question ID: 1988359
++ 7. user: 8206, time: 07:42:38, Question ID: 1988127
++ 8. user: 8206, time: 07:48:49, Question ID: 1988091
++ 9. user: 8206, time: 08:13:45, Question ID: 1988160
++ 10. user: 8206, time: 08:45:35, Question ID: 1988196
++ 11. user: 8206, time: 09:42:33, Question ID: 1988248
++ 12. user: 8206, time: 13:54:18, Question ID: 1988642
++ 13. user: 8206, time: 14:20:06, Question ID: 1988665
++ 14. user: 8206, time: 14:34:48, Question ID: 1988728
++ 15. user: 35501, time: 08:00:43, Question ID: 1988049
++ 16. user: 165905, time: 19:23:57, Question ID: 1989255
++ 17. user: 79891, time: 12:23:36, Question ID: 1980082
+
 
 To study a flow network we shoud make sure it satistifies "flow equivalence" condition. That is, we add to artificial nodes, "soruce" and "sink", to balance the network such that inflow (the sum of weighted indegree) equals outflow (the sum of weighted indegree) on every node within the network. 
 
