@@ -1,5 +1,5 @@
 ---
-title: Retrieve individual streams from flow networks
+title: Finding shortest paths on flow networks
 layout: post
 guid:
 comments: true
@@ -8,11 +8,11 @@ tags:
   - PCI group
 ---
 
-1. A flow network
+1. What is a flow network
 
-The topology of real-world networks have been extensively studied, but the flow structure of networks has not attracted enough attention it deserves. In discussing flow structure we care about the directed, long-distance interactions between nodes and communities, which have strong applied meanings but are rarely covered by current network studies. 
+The topologies of real-world networks have been extensively studied, but their flow structures have not attracted enough attention. In flow structures we focus on the directed, long-distance interactions between nodes and communities, which have strong applied meanings but are rarely covered by previous network studies. 
 
-The following figure shows a flow network demo. This flow network is an aggrenation of several streams. A stream is generated when a users of stackoverflow.com answer a series of questions sequentially, so the flow structure shows the interaction between users and questions. The above figure is contructre from the following data set:
+The following figure shows a flow network as an aggrenation of several streams. In our data set, a stream is generated when a users of stackoverflow.com answer a series of questions sequentially, so the flow structure shows the collective behavior of users in answering questions. Here is our data set:
 
     user: 26624, time: 03:40:31, Question ID: 1983425
     user: 89771, time: 22:53:24, Question ID: 1989888
@@ -32,9 +32,9 @@ The following figure shows a flow network demo. This flow network is an aggrenat
     user: 165905, time: 19:23:57, Question ID: 1989255
     user: 79891, time: 12:23:36, Question ID: 1980082
 
-To study a flow network we shoud make sure it satistifies "flow equivalence" condition. As shown in the attached figure, we add to artificial nodes, "soruce" and "sink", to balance the network such that inflow (the sum of weighted indegree) equals outflow (the sum of weighted indegree) on every node within the network. 
+To study a flow network we shoud make sure it satistifies the ["flow equivalence"](http://en.wikipedia.org/wiki/Flow_network) condition. As shown in the attached figure, we add two artificial nodes, "soruce" and "sink", to balance the network such that inflow (the sum of weighted indegree) equals outflow (the sum of weighted indegree) on every node within the network. 
 
-To construct and balance a flow network from individual records (the time variable should be removed first) we use the following python scripts:
+To construct and balance a flow network from individual records (the time variable in the data set should be removed first) we use the following python scripts:
 
     import networkx as nx
     import re
@@ -92,7 +92,7 @@ To construct and balance a flow network from individual records (the time variab
         return n
     
 
-By applying the above scripts we obtain the weighted, directed flow network
+By applying the above scripts we obtain the weighted, directed flow network as an edge list:
 
     1988160->1988196: 1
     1983425->sink: 1
@@ -122,9 +122,42 @@ By applying the above scripts we obtain the weighted, directed flow network
     1988091->1988160: 1
     1988127->1988091: 1
 
-On this balanced flow network we can calculate the network inflow (which equals the network outflow) as 10 - this is also the number of individual streams (individual users), and the network total flow is 27. Dividing 27 by 10 is 2.7, this is the average flow length (the number of questions answered by an average user).
+On this balanced flow network we can calculate the network inflow from "source" (which equals the network outflow to "sink") as 10. This is also the number of individual streams (individual users). The network total flow is 27, which is also the total numbers of answers. Dividing 27 by 10 we get 2.7, this is the average flow length of the network (the number of questions answered by an average user in the system).
 
-Now, a particularly interesting question is, given this flow network structure, can we retrive individual ctreams ? This idea sounds crazy, but it is not entirely impossible. I found that by using the [Dijkstra algorithm](http://en.wikipedia.org/wiki/Dijkstra's_algorithm) recursively it is possible to do this. I would not release my scripts here, but we can check the result:
+Now, a particularly interesting question is, given this flow network structure, can we retrive individual ctreams ? This idea sounds crazy, but it is not entirely impossible. I found that by using the [Dijkstra algorithm](http://en.wikipedia.org/wiki/Dijkstra's_algorithm) recursively it is possible to do this. The Dijkstra algorithm is designed for finding the shortest path between two nodes in a graph:
+
+    def Dijkstra(G,target):
+        # initialize
+        RG = G.reverse()
+        dist = {}
+        previous = {}
+        for v in RG.nodes():
+            dist[v] = float('inf')
+            previous[v] = 'none'
+        dist[target] = 0
+        u = target
+        # main loop
+        while u!='source' and dist:
+            u = min(dist, key=dist.get)
+            distu = dist[u]
+            del dist[u]
+            for u,v in RG.edges(u):
+                if v in dist:
+                    alt = distu + RG[u][v]['weight']
+                    if alt < dist[v]:
+                        dist[v] = alt
+                        previous[v] = u
+        #retrieve flow
+        path=('source',)
+        last='source'
+        while last!=target:
+            if last in previous:
+                nxt = previous[last]
+                path += (nxt,)
+                last = nxt
+        return path
+
+By applying the algorithm and adjusting the graph repeatively, we get the following result:
 
     ('source', 1980082, 'sink'): 1,
     ('source', 1983425, 'sink'): 1,
@@ -138,25 +171,28 @@ Now, a particularly interesting question is, given this flow network structure, 
     ('source', 1989888, 'sink'): 1}
 	
 
-This is amzaing, we successively retrived every single path! But I also found that my scripts have two limitations. 1. It can not handle loops (this is the limitation of the Dijkstra algorithm itself); 2. Some times a (macro) flow network structure (such as two triangles heading at each other) is a result of several equivalent (micro) combinations. In these cases my scripts can not gurantee the retrieved individual streams are correct. 
+This is amzaing, we successively retrived every single path! But I also found that this method has two limitations. 
 
-For example, to construct flow from the following two data sets:
+1. It can not handle loops, this is the limitation of the Dijkstra algorithm itself; 
+
+2. Some times different combinations of individual streams lead to the same flow network structure, such as two triangles heading at each other. In these cases the Dijkstra method can not gurantee the retrieved individual streams are all correct. 
+
+For example, using the following two different data sets:
 
 	E1 = [['user A',0],['user A',1],['user A',2],['user A',3],['user B',2]]
 	E2 = [['user A',0],['user A',1],['user A',2],['user B',2],['user B',3]]
 
-We all get 
+We get the same flow network:
 
-
+    source->0: 1
     0->1: 1
     1->2: 1
     2->3: 1
-    2->sink: 1
     3->sink: 1
-    source->0: 1
     source->2: 1
+    2->sink: 1
 
-
+Despite these limitations, this method is novel and powerful. It is interesting to see its application in other real-world networks.
 
 <body>
 <style>
