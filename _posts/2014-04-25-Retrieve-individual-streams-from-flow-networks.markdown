@@ -32,8 +32,131 @@ The following figure shows a flow network demo. This flow network is an aggrenat
     user: 165905, time: 19:23:57, Question ID: 1989255
     user: 79891, time: 12:23:36, Question ID: 1980082
 
+To study a flow network we shoud make sure it satistifies "flow equivalence" condition. As shown in the attached figure, we add to artificial nodes, "soruce" and "sink", to balance the network such that inflow (the sum of weighted indegree) equals outflow (the sum of weighted indegree) on every node within the network. 
 
-To study a flow network we shoud make sure it satistifies "flow equivalence" condition. That is, we add to artificial nodes, "soruce" and "sink", to balance the network such that inflow (the sum of weighted indegree) equals outflow (the sum of weighted indegree) on every node within the network. 
+To construct and balance a flow network from individual records (the time variable should be removed first) we use the following python scripts:
+
+    import networkx as nx
+    import re
+    from numpy import linalg as LA
+    import numpy as np
+    from collections import defaultdict
+    from os import listdir
+    from os.path import isfile, join
+    import matplotlib.pyplot as plt
+	
+    def constructFlowNetwork (C):
+        E=defaultdict(lambda:0)
+        E[('source',C[0][1])]+=1
+        E[(C[-1][1],'sink')]+=1
+        F=zip(C[:-1],C[1:])
+        for i in F:
+            if i[0][0]==i[1][0]:
+                E[(i[0][1],i[1][1])]+=1
+            else:
+                E[(i[0][1],'sink')]+=1
+                E[('source',i[1][1])]+=1
+        G=nx.DiGraph()
+        for i,j in E.items():
+            x,y=i
+            G.add_edge(x,y,weight=j)
+        return G
+    
+    def flowBalancing(G):
+        RG = G.reverse()
+        H = G.copy()
+        def nodeBalancing(node):
+            outw=0
+            for i in G.edges(node):
+                outw+=G[i[0]][i[1]].values()[0]
+            inw=0
+            for i in RG.edges(node):
+                inw+=RG[i[0]][i[1]].values()[0]
+            deltaflow=inw-outw
+            if deltaflow > 0:
+                H.add_edge(node, "sink",weight=deltaflow)
+            elif deltaflow < 0:
+                H.add_edge("source", node, weight=abs(deltaflow))
+            else:
+                pass
+        for i in G.nodes():
+            nodeBalancing(i)
+        if ("source", "source") in H.edges():  H.remove_edge("source", "source")    
+        if ("sink", "sink") in H.edges(): H.remove_edge("sink", "sink")
+        return H
+    
+    def outflow(G,node):
+        n=0
+        for i in G.edges(node):
+            n+=G[i[0]][i[1]].values()[0]
+        return n
+    
+
+By applying the above scripts we obtain the weighted, directed flow network
+
+    1988160->1988196: 1
+    1983425->sink: 1
+    1988642->1988665: 1
+    1989251->sink: 1
+    1988196->1988248: 1
+    1989255->sink: 1
+    1988359->sink: 1
+    1989888->sink: 1
+    1988049->sink: 1
+    source->1989888: 1
+    source->1983425: 1
+    source->1989251: 1
+    source->1988359: 1
+    source->1989255: 1
+    source->1988049: 1
+    source->1980082: 1
+    source->1987883: 1
+    source->1987833: 1
+    source->1988127: 1
+    1980082->sink: 1
+    1987883->sink: 1
+    1988728->sink: 1
+    1988665->1988728: 1
+    1988248->1988642: 1
+    1987833->sink: 1
+    1988091->1988160: 1
+    1988127->1988091: 1
+
+On this balanced flow network we can calculate the network inflow (which equals the network outflow) as 10 - this is also the number of individual streams (individual users), and the network total flow is 27. Dividing 27 by 10 is 2.7, this is the average flow length (the number of questions answered by an average user).
+
+Now, a particularly interesting question is, given this flow network structure, can we retrive individual ctreams ? This idea sounds crazy, but it is not entirely impossible. I found that by using the [Dijkstra algorithm](http://en.wikipedia.org/wiki/Dijkstra's_algorithm) recursively it is possible to do this. I would not release my scripts here, but we can check the result:
+
+    ('source', 1980082, 'sink'): 1,
+    ('source', 1983425, 'sink'): 1,
+    ('source', 1987833, 'sink'): 1,
+    ('source', 1987883, 'sink'): 1,
+    ('source', 1988049, 'sink'): 1,
+    ('source', 1988127, 1988091, 1988160, 1988196, 1988248, 1988642, 1988665, 1988728, 'sink'): 1,
+    ('source', 1988359, 'sink'): 1,
+    ('source', 1989251, 'sink'): 1,
+    ('source', 1989255, 'sink'): 1,
+    ('source', 1989888, 'sink'): 1}
+	
+
+This is amzaing, we successively retrived every single path! But I also found that my scripts have two limitations. 1. It can not handle loops (this is the limitation of the Dijkstra algorithm itself); 2. Some times a (macro) flow network structure (such as two triangles heading at each other) is a result of several equivalent (micro) combinations. In these cases my scripts can not gurantee the retrieved individual streams are correct. 
+
+For example, to construct flow from the following two data sets:
+
+	E1 = [['user A',0],['user A',1],['user A',2],['user A',3],['user B',2]]
+	E2 = [['user A',0],['user A',1],['user A',2],['user B',2],['user B',3]]
+
+We all get 
+
+
+    0->1: 1
+    1->2: 1
+    2->3: 1
+    2->sink: 1
+    3->sink: 1
+    source->0: 1
+    source->2: 1
+
+
 
 <body>
 <style>
