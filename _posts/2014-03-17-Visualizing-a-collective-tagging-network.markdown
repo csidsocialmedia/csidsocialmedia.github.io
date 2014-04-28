@@ -1,5 +1,5 @@
 ---
-title: Network visualization by D3
+title: Visualizing a collective tagging network
 layout: post
 guid: 
 comments: true
