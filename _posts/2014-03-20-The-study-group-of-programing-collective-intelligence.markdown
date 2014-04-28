@@ -19,9 +19,9 @@ We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a r
 
 + 1. [Correcting spellings](http://csidsocialmedia.github.io/2014/03/28/Correcting-Spelling.html) (Mar. 28)
 + 2. [Recommending items](http://csidsocialmedia.github.io/2014/04/04/A-Recommedation-system-based-on-Yelp-data.html) (Apr. 04)
-+ 3. Discovering groups (Apr. 11)
-+ 4. Searching pages (Apr. 18)
-+ 5. Optimizing preferences (Apr. 25)
++ 3. [Discovering groups](http://csidsocialmedia.github.io/2014/04/10/Clustering-blogs-by-text.html) (Apr. 11)
++ 4. [Searching pages](http://csidsocialmedia.github.io/2014/04/18/Search-engine-in-nutshell.html) (Apr. 18)
++ 5. [Optimizing preferences](http://csidsocialmedia.github.io/2014/04/25/Finding-shortest-paths-on-flow-networks.html) (Apr. 25)
 + 6. ------------------- (May 02)
 + 7. Filtering documents (May 09)
 + 8. Modeling decisions (May 16)
