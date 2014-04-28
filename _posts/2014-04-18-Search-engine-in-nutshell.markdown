@@ -8,6 +8,9 @@ tags:
   - PCI group
 ---
 
+![crawler.jpg](/media/files/2014-04-18-Search-engine-in-nutshell/crawler.jpg)
+<sub>Figure cited from [here](http://www.417marketing.com/how-do-web-crawlers-work/)</sub>
+
 1. Three steps to build a search engine
 
 There are at least three steps to buld a (toy) search engine:
