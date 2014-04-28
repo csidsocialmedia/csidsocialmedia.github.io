@@ -24,26 +24,20 @@ We fitted the traffic distribution of base stations using the [powerlaw](https:/
 ![basetrafficdist](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/basetrafficdist.png)
 
 
-### The mobility of users in the physical world
+### The mobility of users in the physical and virtual world 
 
 For each of the 69,726 users, We calculated the number of unique base stations, the number of repeated visited stations (we constructed the sequence such that any two successive stations are different), and also the total navigated distance. 
 
 The mobility of all users:
 
-![navigation](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/navigation.png)
+![navigation2](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/navigation2.png)
 
-The distributions of the three variables:
+The distributions of the six variables:
 
-![navigationdist](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/navigationdist.png)
+![navigationDist.png](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/navigationDist.png)
 
-and the scaling relationship between each pair of varibales:
+and the scaling relationship between several pairs of varibales:
 
-![naviallo](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/naviallo.png)
+![allometric.png](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/allometric.png)
 
-
-### The mobility of users in the virtual world
-
-For each base station we calculated the most popular site and display them on the map
-
-![sitemap](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/sitemap.png)
 
