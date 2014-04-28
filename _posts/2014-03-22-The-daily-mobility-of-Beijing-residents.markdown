@@ -19,10 +19,7 @@ The distribution of 14,909 base stations:
 
 The darkness of the data points is propotional to the logrithm value of traffic of the base stations. 
 
-We fitted the traffic distribution of base stations using the [powerlaw](https://pypi.python.org/pypi/powerlaw) module and found that it is a truncated power-law distribution:
-
-![basetrafficdist](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/basetrafficdist.png)
-
+We fitted the following discussed long-tail distributions using [powerlaw](https://pypi.python.org/pypi/powerlaw) module.
 
 ### The mobility of users in the physical and virtual world 
 
