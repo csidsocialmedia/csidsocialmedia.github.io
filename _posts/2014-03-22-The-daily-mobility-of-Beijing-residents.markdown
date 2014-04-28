@@ -31,7 +31,7 @@ The mobility of all users:
 
 The distributions of the six variables:
 
-![navigationDist.png](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/navigationDist.png)
+![ndist.png](/media/files/2014-03-22-The-daily-mobility-of-Beijing-residents/ndist.png)
 
 and the scaling relationship between several pairs of varibales:
 
