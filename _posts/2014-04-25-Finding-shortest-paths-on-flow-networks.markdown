@@ -194,6 +194,10 @@ We get the same flow network:
 
 Despite these limitations, this method is novel and powerful. It is interesting to see its application in other real-world networks.
 
+The following figure comapres the length distributions of the real flows (generted from user record) with that of the simulated flows (retrieved from aggregated flow networks using the above mentioned method) using stackoverflow data.
+
+![simulatedDist](/media/files/2014-04-25-Finding-shortest-paths-on-flow-networks/simulatedDist.png)
+
 <body>
 <style>
 
