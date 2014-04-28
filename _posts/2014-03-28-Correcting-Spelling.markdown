@@ -1,5 +1,5 @@
 ---
-title: Correcting Spelling PCI group
+title: Correcting Spelling
 layout: post
 guid:
 comments: true
