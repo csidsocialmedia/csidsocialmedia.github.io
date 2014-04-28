@@ -17,6 +17,6 @@ Read our
 
 to know more about us, or mail
 
-> Lingfei DOT Wu AT asu DOT edu
+> Lingfei [(CV)](http://weblab.com.cityu.edu.hk/blog/lingfei/curriculum-vitae-2/) DOT Wu AT asu DOT edu
 
 to reach us

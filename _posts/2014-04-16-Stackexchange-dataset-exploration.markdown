@@ -36,9 +36,6 @@ The upper and lower bound of a "band" show the number of answers and questions o
 
 The following plot shows how users move between sites on 2013-01-01. Compared with the attention flow within sites, the scale of cross-site attention flow is very small.
 
-
-<!DOCTYPE html>
-<meta charset="utf-8">
 <style>
 
 .link {
