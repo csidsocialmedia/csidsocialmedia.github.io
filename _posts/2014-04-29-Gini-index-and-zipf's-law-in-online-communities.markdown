@@ -32,14 +32,14 @@ $$
 in which the left side is the bottom k% of the population and the right side is the income x. By inversing the Pareto distribution we get 
 
 $$
-x(F) = x_m(1-F)^(-\frac{1}{\alpha})    (3)
+x(F) = x_m(1-F)^ -\frac{1}{\alpha}   \,\,\,\,\,   (3)
 $$
 
 where the left sie (y axis) is the income x and right side (x axis) is the ratio F of population. 
 Here F is the ratio obtained by sorting the population increasingly. Now the Lorenz curve, which plots total income against the bottom F population, can be expressed as
 
 $$
-L(F) = \frac{\int_0^F x(F) dF }} { \int_0^1 x(F) dF } = 1 - (1-F)^(1-\frac{1}{\alpha})  (4)
+L(F) = \frac { \int_0^F \! x(F) \, \mathrm{d}F } { \int_0^1 \! x(F) \, \mathrm{d}F } = 1 - (1-F)^ 1-\frac{1}{\alpha}   (4)
 $$
 
 The following plot shows Eq.(4) with four different values of alpha.  
