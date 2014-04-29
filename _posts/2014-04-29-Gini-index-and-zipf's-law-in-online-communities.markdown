@@ -32,7 +32,7 @@ $$
 in which the left side is the bottom k% of the population and the right side is the income x. By inversing the Pareto distribution we get 
 
 $$
-x(F) = x_m(1-F)^ -\frac{1}{\alpha},   \,\,\,\,\,   (3)
+x(F) = x_m(1-F)^ -{\frac{1}{\alpha}},   \,\,\,\,\,   (3)
 $$
 
 where the left sie (y axis) is the income x and right side (x axis) is the ratio F of population. 
