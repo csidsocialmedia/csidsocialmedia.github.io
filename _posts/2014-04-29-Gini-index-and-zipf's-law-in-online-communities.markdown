@@ -10,6 +10,8 @@ tags:
 
 1. Gini index, Lorenz curve, and Zipf's law
 
+<img src="/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/gini.png" height="400px" width="300px" />
+
 ![gini.png](/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/gini.png)
 <sub>Figure cite from [wiki](http://en.wikipedia.org/wiki/Gini_coefficient)</sub>
 
