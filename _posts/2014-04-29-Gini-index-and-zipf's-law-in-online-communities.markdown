@@ -20,7 +20,7 @@ Those who are familiar with Zipf's law would immediately connect it with Lorenz 
 As mentioned, we have
 
 $$
-B = \int_0^1 \! L(F) \, \mathrm{d}F. \,\,\,\,\,  (1)
+B = \int_0^1 \! L(F) \, \mathrm{d}F. \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,   (1)
 $$
 
 Meanwhile, the cumulative distribution function (CDF) of Pareto distribution is
