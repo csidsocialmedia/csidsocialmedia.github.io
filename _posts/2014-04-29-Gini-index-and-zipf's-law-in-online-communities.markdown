@@ -20,7 +20,7 @@ Those who are familiar with Zipf's law would immediately connect it with Lorenz 
 As mentioned, we have
 
 $$
-B = \int_0^1 L(F) dF    (1)
+B = \int_0^1 \! L(F) \, \mathrm{d}F. \,\,\,\,\,  (1)
 $$
 
 Meanwhile, the cumulative distribution function (CDF) of Pareto distribution is
@@ -44,7 +44,7 @@ $$
 
 The following plot shows Eq.(4) with four different values of alpha.  
 
-<img src="/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/pareto_Lorenz.png" height="400px" width="400px" />
+<img src="/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/pareto_Lorenz.png" height="300px" width="400px" />
 <sub>Figure cite from [wiki](http://en.wikipedia.org/wiki/Gini_coefficient)</sub>
 
 Now we have 
