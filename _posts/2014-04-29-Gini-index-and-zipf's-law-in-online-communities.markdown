@@ -10,9 +10,7 @@ tags:
 
 1. Gini index, Lorenz curve, and Zipf's law
 
-<img src="/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/gini.png" height="400px" width="300px" />
-
-![gini.png](/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/gini.png)
+<img src="/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/gini.png" height="400px" width="400px" />
 <sub>Figure cite from [wiki](http://en.wikipedia.org/wiki/Gini_coefficient)</sub>
 
 The Gini coefficient (G) is defined based on the Lorenz curve L(F), which plots the proportion of the total income (y axis) cumulatively earned by the bottom f% (or 0 < F < 1) of the population. In particular, Assume that the area between the line at 45 degrees and the Lorenz curve is A, and the area under the Lorenz curve is B, then G =  A / (A + B). Since A + B = 0.5, we have G = 1 – 2 B. G varies theoretically from 0 (complete equality) to 1 (complete inequality). 
@@ -46,7 +44,7 @@ $$
 
 The following plot shows Eq.(4) with four different values of alpha.  
 
-![pareto_Lorenz.png](/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/pareto_Lorenz.png)
+<img src="/media/files/2014-04-29-Gini-index-and-zipf's-law-in-online-communities/pareto_Lorenz.png" height="400px" width="400px" />
 <sub>Figure cite from [wiki](http://en.wikipedia.org/wiki/Gini_coefficient)</sub>
 
 Now we have 
