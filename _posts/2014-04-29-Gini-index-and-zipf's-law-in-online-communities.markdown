@@ -20,13 +20,13 @@ Those who are familiar with Zipf's law would immediately connect it with Lorenz 
 As mentioned, we have
 
 $$
-B = \int_0^1 \! L(F) \, \mathrm{d}F. \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,   (1)
+B = \int_0^1 \! L(F) \, \mathrm{d}F. \,\,\,\,\,   (1)
 $$
 
 Meanwhile, the cumulative distribution function (CDF) of Pareto distribution is
 
 $$
-F = 1 - (\frac{x_m}{x})^(\alpha)   (2)
+F = 1 - (\frac{x_m}{x}) ^\alpha, \,\,\,\,\,   (2)
 $$
 
 in which the left side is the bottom k% of the population and the right side is the income x. By inversing the Pareto distribution we get 
