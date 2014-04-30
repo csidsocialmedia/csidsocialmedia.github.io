@@ -10,7 +10,7 @@ tags:
 
 1. Gini index, Lorenz curve, and Zipf's law
 
-<img src="/media/files/2014-04-29-Gini-index-and-zipf-law-in-online-communities/gini.png" height="400px" width="400px" />
+<img src="/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/gini.png" height="400px" width="400px" />
 <sub>Figure cite from [wiki](http://en.wikipedia.org/wiki/Gini_coefficient)</sub>
 
 The Gini coefficient (G) is defined based on the Lorenz curve L(F), which plots the proportion of the total income (y axis) cumulatively earned by the bottom f% (or 0 < F < 1) of the population. In particular, Assume that the area between the line at 45 degrees and the Lorenz curve is A, and the area under the Lorenz curve is B, then G =  A / (A + B). Since A + B = 0.5, we have G = 1 – 2 B. G varies theoretically from 0 (complete equality) to 1 (complete inequality). 
@@ -44,7 +44,7 @@ $$
 
 The following plot shows Eq.(4) with four different values of alpha (typo: "k" should be alpha in the figure).  
 
-<img src="/media/files/2014-04-29-Gini-index-and-zipf-law-in-online-communities/pareto_Lorenz.png" height="300px" width="400px" />
+<img src="/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/pareto_Lorenz.png" height="300px" width="400px" />
 <sub>Figure cite from [wiki](http://en.wikipedia.org/wiki/Gini_coefficient)</sub>
 
 Now we have 
@@ -76,7 +76,7 @@ $$
 
 We investigated user's daily answering activities on stackoverflow.com and calculated the exponent of Zipf's law and Gini index. It turns out that this community went through two stages of developments. At the first stage a small group of experts contributes a increasingly number of answers (2009-2012), but at the second stage "the mass" was taking over the power and palying a more and more important role (2012-2014).
 
-![ginievolution.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/ginievolution.png)
+![ginievolution.png](/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/ginievolution.png)
 
-![ginizipf.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/ginizipf.png)
+![ginizipf.png](/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/ginizipf.png)
 
