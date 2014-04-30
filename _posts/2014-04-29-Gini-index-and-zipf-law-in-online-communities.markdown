@@ -72,6 +72,8 @@ $$
 G = \frac{1}{2\alpha - 1} = \frac{\beta}{2-\beta}  \,\,\,\,\,   (8)
 $$
 
+2. The Lorenz curve, Gini index, and Zipf's law in online communities
+
 The following figure display the evolutions of the exponent of Zipf's law and that of Gini index in user's question answering activities on stackoverflow.com. 
 
 ![ginievolution.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-zipf-law-in-online-communities/ginievolution.png)
