@@ -1,5 +1,5 @@
 ---
-title: Gini index and Zipf's law in online communities
+title: Gini index and Zipf law in online communities
 layout: post
 guid:
 comments: true
