@@ -76,7 +76,7 @@ $$
 
 We investigated user's daily answering activities on stackoverflow.com and calculated the exponent of Zipf's law and Gini index. It turns out that this community went through two stages of developments. At the first stage a small group of experts contributes a increasingly number of answers (2009-2012), but at the second stage "the mass" was taking over the power and palying a more and more important role (2012-2014).
 
-![ginievolution.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-zipf-law-in-online-communities/ginievolution.png)
+![ginievolution.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/ginievolution.png)
 
-![ginizipf.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-zipf-law-in-online-communities/ginizipf.png)
+![ginizipf.png](/Users/csid/Documents/githublog/csidsocialmedia.github.io/media/files/2014-04-29-Gini-index-and-Zipf-law-in-online-communities/ginizipf.png)
 
