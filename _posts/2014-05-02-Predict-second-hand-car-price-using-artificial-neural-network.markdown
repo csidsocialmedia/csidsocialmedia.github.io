@@ -212,7 +212,7 @@ In our data set, we have 40,063 posts, 13697 of which contain full information i
 
 ![carprice](/media/files/2014-05-02-Predict-second-hand-car-price-using-artificial-neural-network/carprice.png)
 
-As shown by the above figure, age and odometer are non-linearly, negatively correlated with price. Neural network is a good tool to model this non-linear realtionship.
+As shown by the above figure, age and odometer are non-linearly, negatively correlated with price. Neural network is a good tool to model this non-linear realtionship. This primary step of data visualization/exploration is important for furture analysis. For example, I found in this step that some seller use k miles as unit for odometer, while others use miles. Therefore, data should be always be exmained/cleaned before we applying statistical models. 
 
 4. Future directions worth studying
 
