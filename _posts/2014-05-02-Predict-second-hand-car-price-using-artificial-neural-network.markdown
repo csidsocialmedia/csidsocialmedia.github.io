@@ -11,6 +11,63 @@ tags:
 
 ![demo](/media/files/2014-05-02-Predict-second-hand-car-price-using-artificial-neural-network/demo.png)
 
+2. Backpropagation
+
+The backpropagation algorithm (Rumelhart and McClelland, 1986) is used to train ANNs. The idea of the backpropagation algorithm is to minimize the error (difference between actual and expected results) by addjusting the weights on links. In other words, we shall calculate the partial derivative of the error E with respect to each link weight w_i. Using the chain rule we can decompose this target variable to
+
+$$
+ \frac{\partial E}{\partial w_i} = \frac{dE}{dy}\frac{dy}{d \mathrm{net}} \frac{\partial \mathrm{net}}{\partial w_i}.   \,\,\,\,\,   (1)
+$$
+
+
+The left side of the euqation shows how the error changes when the weights are changed, and the three items in the right side show how the error changes when the output is changed, how the output changes when the weighted sum changes, and how the weighted sum changes as the weights change, respetively. 
+
+If we define the error function as 
+
+$$
+E = \tfrac{1}{2}(t - y)^2, \,\,\,\,\,   (2)
+$$
+
+and apply a sigmoid function on neurons to transform the result 
+
+$$
+y = tanh (net) = tanh(\sum_{i=1}^{n}w_ix_i)  \,\,\,\,\,   (3)
+$$
+
+Then we have 
+
+$$
+\frac{dE}{dy} = t - y,  \,\,\,\,\,   (4)
+$$
+
+and 
+
+$$
+\frac{\partial \mathrm{net}}{\partial w_i} = \frac{\partial \sum_{i=1}^{n}w_ix_i}{\partial w_i} = x_i,  \,\,\,\,\,   (5)
+$$
+
+and 
+
+$$
+\frac{dy}{d\mathrm{net}} = \frac{d}{d\mathrm{net}} tanh = sech^2(y) = 1-y^2+(2 y^4)/3 + O(y)^5\approx 1-y^2.  \,\,\,\,\,   (6)
+$$
+
+put Eq.(4) ~ Eq.(6) together, we have 
+
+
+$$
+ \frac{\partial E}{\partial w_i} = (t-y)(1-y^2)x_i.   \,\,\,\,\,   (7)
+$$
+
+To update the weight w_i using gradient descent, we should define a learning rate N. 
+
+
+$$
+\Delta w_i = -N \frac{\partial E}{\partial w_i} = N(y-t)(1-y^2)x_i.   \,\,\,\,\,   (8)
+$$
+
+
+In most of cases we also need and a momentum M to store the direction and magnitude of the last change to avoid being trapped in the local minima of error lanscape. We set N=0.5, M=0.1 in the following code.
 
     
     class NN:
