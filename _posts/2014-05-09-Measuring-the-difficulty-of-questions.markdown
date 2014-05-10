@@ -87,4 +87,4 @@ There are four different types of behaviors ... (to be continued)
 
 ![timeAct](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/timeAct.png) 
 
-![pei](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/pie.png) 
+<img src="/media/files/2014-05-09-Measuring-the-difficulty-of-questions/pie.png" height="300px" width="300px" />
