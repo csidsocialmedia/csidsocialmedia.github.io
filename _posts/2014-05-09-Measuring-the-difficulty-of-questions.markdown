@@ -82,3 +82,9 @@ The left plot of the above figure shows the distribution of TrueSkill scores of 
 Now we can analyze the different strategies of users
 
 ![categories](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/categories.png) 
+
+There are four different types of behaviors ... (to be continued)
+
+![timeAct](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/timeAct.png) 
+
+![pei](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/pie.png) 
