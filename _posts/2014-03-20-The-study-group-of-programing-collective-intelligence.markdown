@@ -44,8 +44,11 @@ The current members of this group include
 	+ Jinxue Zhang (GCSE)
 
 <sub>CSID stands for the Center for the Study of Institutional Diversity</sub>
+
 <sub>SHESC stands for School of Human Evolution and Social Change</sub>
+
 <sub>W. P. Carey stands for W. P. Carey School of Business</sub>
+
 <sub>GCSC stands for Goldwater Center For Science and Engineering</sub>
 
 During the meetings, we will divide into three or more groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
