@@ -68,10 +68,10 @@ For each question, we collect all related answers and define four types of game 
 	   
        accepted answerer > asker                   (III)
 	   
-       accepted answerer > non-accepted asker1     (IV)
-       accepted answerer > non-accepted asker3
+       accepted answerer > non-accepted answerer1  (IV)
+       accepted answerer > non-accepted answerer2
        ...
-       accepted answerer > non-accepted askerk
+       accepted answerer > non-accepted answererk
 
 At first, we set the initial value of mu = 25, sigma = 25/3, and beta = sigma/2 the same to all players (these are the values in applying the TrueSkill in xbox games) and then updated the values of winners and losers across the 11 million pairs of players. After we got the result we calculated miu-3sigma as the stable score for palyer (we add 10 for each score to make sure all scoare are positve). This method not only quantifies the difficulties of questions and the skill levels of users at the same time, but also allows one to compare the the expertise of an user with the difficulties of the questions he chosed to answer and thus provides the tools to investigate individual strategies. But first of all, we may want to validate the resulting score. 
 
