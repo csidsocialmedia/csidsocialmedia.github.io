@@ -22,8 +22,8 @@ We will use [this book](http://shop.oreilly.com/product/9780596529321.do) as a r
 + 3. [Discovering groups](http://csidsocialmedia.github.io/2014/04/10/Clustering-blogs-by-text.html) (Apr. 11)
 + 4. [Searching pages](http://csidsocialmedia.github.io/2014/04/18/Search-engine-in-nutshell.html) (Apr. 18)
 + 5. [Optimizing preferences](http://csidsocialmedia.github.io/2014/04/25/Finding-shortest-paths-on-flow-networks.html) (Apr. 25)
-+ 6. ------------------- (May 02)
-+ 7. Filtering documents (May 09)
++ 6. [Predicting price](http://csidsocialmedia.github.io/2014/05/02/Predict-second-hand-car-price-using-artificial-neural-network.html) (May 02)
++ 7. [Measuring expertise](http://csidsocialmedia.github.io/2014/05/09/Measuring-the-difficulty-of-questions.html) (May 09)
 + 8. Modeling decisions (May 16)
 + 9. Predicting price (May 23)
 + 10. Evolving intelligence (May 30)
@@ -41,10 +41,12 @@ The current members of this group include
 	+ Moon Zhang (Science in Business Analytics, W. P. Carey)
 	+ Shan Yuan (the same as above)
 	+ Linghuan zeng (the same as above)
+	+ Jinxue Zhang (GCSE)
 
 <sub>CSID stands for the Center for the Study of Institutional Diversity</sub>
 <sub>SHESC stands for School of Human Evolution and Social Change</sub>
 <sub>W. P. Carey stands for W. P. Carey School of Business</sub>
+<sub>GCSC stands for Goldwater Center For Science and Engineering</sub>
 
 During the meetings, we will divide into three or more groups, each one has their own project. Members are also encouraged to bring their own data mining/machine learning problems into discussions.  
 
