@@ -62,13 +62,15 @@ layout: default
     </span>
   </div>
   {% endif %}
+  
+<!--'{{ page.guid }}';-->
 
   <section class="comment">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       var disqus_shortname = '{{ site.disqus }}';
-      var disqus_identifier = '{{ page.guid }}';
-
+      var disqus_identifier = '{{ site.url }}{{ page.url | remove:'index.html' }}';
+      
       function leave_comment() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
