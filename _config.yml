@@ -4,7 +4,7 @@ permalink: /:year/:month/:day/:title.html
 name: "君莫要逐云追梦"
 author: "csidsocialmedia"
 atom-baseurl: "csidsocialmedia.github.io"
-disqus: "lingfeiwu"
+disqus: "csidsocialmedia"
 
 navigations:
   - title: Archive
