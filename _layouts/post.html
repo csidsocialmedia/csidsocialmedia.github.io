@@ -6,6 +6,7 @@ layout: default
   <section class="title">
     <h2>{{ page.title }} </h2>
   </section>
+  
   <section class="meta">
   <span class="time">
     <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
@@ -16,7 +17,10 @@ layout: default
     <a href="/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>
     {% endfor %}
   </span>
-  <!-- BEGIN this would not work on any other domain -->
+  {% endif %}
+  </section>
+  
+  <!-- BEGIN this would not work on any other domain 
   <span id="like-wrapper"></span>
   <script type="text/javascript">
     var like_shortname      = '{{ site.disqus }}';
@@ -30,11 +34,12 @@ layout: default
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(l);
   </script>
   <!-- END this would not work on any other domain -->
-  {% endif %}
-  </section>
+  
+  
   <section class="post">
   {{ content }}
   </section>
+  
   {% if page.guid %}
   <div class="divider">
     <span>
@@ -56,7 +61,7 @@ layout: default
     {% endif %}
     </span>
   </div>
-
+  {% endif %}
 
   <section class="comment">
   <div id="disqus_thread"></div>
@@ -84,5 +89,5 @@ layout: default
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </section>
 
-  {% endif %}
+  
 </article>
