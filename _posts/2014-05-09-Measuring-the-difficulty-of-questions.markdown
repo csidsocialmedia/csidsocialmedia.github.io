@@ -90,3 +90,5 @@ There are four different types of behaviors ... (to be continued)
 <img src="/media/files/2014-05-09-Measuring-the-difficulty-of-questions/pie.png" height="300px" width="300px" />
 
 ![trend](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/trend.png) 
+
+![conservation](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/conservation.png) 
