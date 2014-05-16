@@ -7,7 +7,7 @@ tags:
   - PCI group
 ---
 
-![lobster](/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/lobster.jpg)
+<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/lobster.jpg" height="262px" width="400px" />
 <sub>Figure cited from [here](https://www.dnr.sc.gov/marine/sertc/gallery.htm)</sub>
 
 
@@ -205,7 +205,7 @@ The reuslt can be obtain by
 
 After an evolution that lasted for more than ten minutes (a disadvantage of GP is that it is very time conusming in some cases), we got our result as shown in the following figure. If we do some simple math we will find that it equals to the function we defined above.
 
-<head>
+<body>
   <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>  
   <style >
     .node {
@@ -427,4 +427,4 @@ function click(d) {
 </script>
 
 
-</head>
+</body>
