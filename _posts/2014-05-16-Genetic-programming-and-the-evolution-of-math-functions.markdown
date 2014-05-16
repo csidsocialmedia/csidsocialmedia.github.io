@@ -27,10 +27,10 @@ The frist two columns are x and y and the third is z, how can we find a function
 
 ###Programs as parse trees
 
+<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/tree.png" height="190px" width="480px" />
+
 A program is an operation that turns input into output. So basically functions defined by codes and math symbols are the same. A function can be understood as a parse tree, which organize a serious of operations together. The following Python code defines a class that can be used to express parse trees.
 
-
-<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/tree.png" height="190px" width="480px" />
 
     from random import random,randint,choice
     from copy import deepcopy
