@@ -94,3 +94,6 @@ There are four different types of behaviors ... (to be continued)
 The conservation law of human attention
 
 ![conservation](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/conservation.png) 
+
+
+![allo](/media/files/2014-05-09-Measuring-the-difficulty-of-questions/allo.png) 
