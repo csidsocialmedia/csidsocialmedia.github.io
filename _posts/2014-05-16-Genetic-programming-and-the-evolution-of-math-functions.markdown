@@ -129,9 +129,9 @@ $$
 
 ### Genertic evolutions
 
-<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/mutated.png" height="190px" width="480px" />
+<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/mutated.png" height="480px" width="480px" />
 
-<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/crossover.png" height="190px" width="480px" />
+<img src="/media/files/2014-05-16-Genetic-programming-and-the-evolution-of-math-functions/crossover.png" height="480px" width="480px" />
 
 
 We now define the following functions to simulate the mutation and crossover behavior in nature.
