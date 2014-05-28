@@ -28,4 +28,5 @@ Or, is there a general "purpose" of these systems, like the principle of [least 
 
 ![3flownetworks](/media/files/2014-05-28-Flow-networks-has-a-purpose/3flownetworks.png)
 
-The above figure is cited from Ignacio Rodrigurez-Iturbe [1992](http://onlinelibrary.wiley.com/doi/10.1029/91WR03034/abstract). 
+The above figure is cited from [here](http://onlinelibrary.wiley.com/doi/10.1029/91WR03034/abstract). The authors using this demo to 
+explain the formation of river trees.  
