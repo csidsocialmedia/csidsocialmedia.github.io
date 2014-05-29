@@ -69,4 +69,4 @@ The above figure shows a random (left) and a optimized (middle) tree obtain in a
 
 <img src="/media/files/2014-05-28-Flow-networks-have-a-purpose/example.png" height="500px" width="500px" />
 
-The above figure shows an optimial network obtain from a 50*50 lattice with 15k+ interations (about a hour).
+The above figure shows an optimial network obtain from a 50*50 lattice with 15k+ interations (about a hour). Does it look like the river networks of the U.S. ?
