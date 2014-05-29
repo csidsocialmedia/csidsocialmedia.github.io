@@ -46,7 +46,7 @@ $$
 E_i= k_i A_i A_i^{\gamma - 1}, \,\,\,\,\,   (2)
 $$
 
-i.e., the production between water flow in the landscape (which is assumed to be proportional to the area Ai) and the elevation difference along link i (which is assumed to scale with Ai with an exponent gamma - 1 empirically). Ki is a quantity related to the property of soil such as erodibility. In homogeneous models we usually assume ki is independent of i and equal to 1. 
+i.e., the production between water flow in the landscape (which is assumed to be proportional to the area Ai) and the elevation difference along link i (which is assumed to scale with Ai with an exponent gamma - 1 < 0 empirically). Ki is a quantity related to the property of soil such as erodibility. In homogeneous models we usually assume ki is independent of i and equal to 1. 
 
 The river networks will evolve to minimize the total energy dissipated, which is defined as 
 
@@ -62,3 +62,11 @@ OCN suggested that the beatiful branching patterns we see in nature is acturally
 <sub>A demo of OCN. The area Ai is shown next to the corresponding site i. The thinner side of the links shows the direction of flow. The total energy of the system is shown in the upper right corner.</sub>
 
 Typically, OCN is defined as a tree on a 2D lattice of linear size L with only one global outlet. Each site on the lattice can only connect to one of its eight neighors. The above figure shows a lattice with L = 3 (left), an example random spanning tree obtained by [Prim's_algorithm](http://en.wikipedia.org/wiki/Prim's_algorithm)(middle), and a rewired tree. A naive version of OCN is to use [Greedy algorithm](http://en.wikipedia.org/wiki/Greedy_algorithm), i.e., generate a random tree and then randomly rewire the links of a node to see if the rewiring decreses the total enenergy E. 
+
+![scaling](/media/files/2014-05-28-Flow-networks-have-a-purpose/scaling.png)
+
+The above figure shows a random (left) and a optimized (middle) tree obtain in a lattice with linear scale L = 5, and also the super-linear scaling relationship between the volumn of outlet and the area of outlet (or the number of nodes) when L changes from 3 to 30 from 20 different sizes. 
+
+<img src="/media/files/2014-05-28-Flow-networks-have-a-purpose/example.png" height="500px" width="500px" />
+
+The above figure shows an optimial network obtain from a 50*50 lattice with 15k+ interations (about a hour).
