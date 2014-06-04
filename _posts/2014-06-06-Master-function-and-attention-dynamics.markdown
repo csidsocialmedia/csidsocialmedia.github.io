@@ -61,28 +61,37 @@ $$
 then we have the function
 
 $$
-p_k &=& \frac{k-1}{2}p_{k-1}-\frac{k}{2}p_k, \,\,\,\,\, (k>m) 
-p_m &=& 1-\frac{m}{2}p_m, \,\,\,\,\, (k=m),   (6)
+p_k &=& \frac{k-1}{2}p_{k-1}-\frac{k}{2}p_k, \,\,\,\,\, (k>m) (6)
+$$
+
+and
+
+$$
+p_m &=& 1-\frac{m}{2}p_m, \,\,\,\,\, (k=m),   (7)
 $$
 
 from which we derive that
 
 $$
-\frac{p_k}{p_{k-1}} = \frac{k-1}{k+2} \,\,\,\,\, (k>m)
+\frac{p_k}{p_{k-1}} = \frac{k-1}{k+2} \,\,\,\,\, (k>m),   (8)
+$$
 
-p_m = \frac{2}{m+2} \,\,\,\,\, (k=m).   (7)
+and 
+
+$$
+p_m = \frac{2}{m+2} \,\,\,\,\, (k=m).   (9)
 $$
 
 To solve p_k, we construct 
 
 $$
-\frac{p_k}{p_m} =   \frac{p_{m+1}}{p_{m}} ...\frac{p_{k-1}}{p_{k-2}}\frac{p_k}{p_{k-1}}  \,\,\,\,\,   (8)
+\frac{p_k}{p_m} =   \frac{p_{m+1}}{p_{m}} ...\frac{p_{k-1}}{p_{k-2}}\frac{p_k}{p_{k-1}}  \,\,\,\,\,   (10)
 $$
 
 and find the solution 
 
 $$
-p_k =   \frac{2m(m+1)}{k(k+1)(k+2)}.  \,\,\,\,\,   (9)
+p_k =   \frac{2m(m+1)}{k(k+1)(k+2)}.  \,\,\,\,\,   (11)
 $$
 
-Eq.(9) approximates a power-law distribution with exponent equals -3 when k is large. This is the same as the result given by the 1999 [paper]((http://www.barabasilab.com/pubs/CCNR-ALB_Publications/199910-15_Science-Emergence/199910-15_Science-Emergence.pdf)).
+Eq.(11) approximates a power-law distribution with exponent equals -3 when k is large. This is the same as the result given by the 1999 [paper]((http://www.barabasilab.com/pubs/CCNR-ALB_Publications/199910-15_Science-Emergence/199910-15_Science-Emergence.pdf)).
