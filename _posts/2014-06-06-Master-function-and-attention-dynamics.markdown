@@ -61,8 +61,8 @@ $$
 then we have the function
 
 $$
-p_k &=& \frac{k-1}{2}p_{k-1}-\frac{k}{2}p_k,\\ \,\,\,\,\, (k>m) 
-p_m &=& 1-\frac{m}{2}p_m,\\ \,\,\,\,\, (k=m),   (6)
+p_k &=& \frac{k-1}{2}p_{k-1}-\frac{k}{2}p_k, \,\,\,\,\, (k>m) 
+p_m &=& 1-\frac{m}{2}p_m, \,\,\,\,\, (k=m),   (6)
 $$
 
 from which we derive that
