@@ -31,27 +31,27 @@ $$
 \frac{kp_k}{\sum_{k=1}^{k_{max}} kp_k} = \frac{kp_k}{2m}. \,\,\,\,\,   (1)
 $$
 
-The denominator is actually the expect degree of nodes, which equals to 2m because each node brings m links and each link contributes two degrees. So the total number of new links attach to nodes of degree k is 
+The denominator is actually the expected degree of nodes, which equals to 2m because each node brings m links and each link contributes two degrees. So the total number of new links attaching to nodes with degree k is 
 
 
 $$
 \frac{mkp_k}{\sum_{k=1}^{k_{max}} kp_k} = \frac{kp_k}{2}. \,\,\,\,\,   (2)
 $$
 
-At each time step, the number of nodes of degree k changes. The change is composed by two parts: the increase contributed by the nodes with degree k-1 and obtained a new link and the decrese caused by the nodes with degree k and also obtain a new link. Therefore we can express this change as:
+At each time step, the number of nodes with degree k changes. The change is composed by two parts: the increase contributed by the nodes moving from degree k-1 to k and and the loss caused by the nodes moving from degree k to k+1. Therefore we can express this change as:
 
 $$
-\triangle k = (n+1)p_{k,n+1}-np_{k,n} = \frac{k-1}{2}p_{k-1,n}-\frac{k}{2}p_{k,n}, \,\,\,\,\,   (3)
+(n+1)p_{k,n+1}-np_{k,n} = \delta k = \frac{k-1}{2}p_{k-1,n}-\frac{k}{2}p_{k,n}, \,\,\,\,\,   (3)
 $$
 
-Eq.(3) hold when k > m. When k = m, there is no nodes with degree k-1, so the number of nodes with degree m can only add 1 when a new node comes, but can decrease for p_m,n * (m/2):
+Eq.(3) hold when k > m. When k = m, there is no nodes moving from degree k-1 to k. The only possible increase of node number comes from the new node. So we revise the expression as
 
 $$
-\triangle m = (n+1)p_{m,n+1}-np_{m,n} = 1-\frac{m}{2}p_{m,n}, \,\,\,\,\,   (4)
+(n+1)p_{m,n+1}-np_{m,n} = \delta m =  1-\frac{m}{2}p_{m,n}, \,\,\,\,\,   (4)
 $$
 
 
-Now, let's assume the system has envolved to such an equilibrium state that the degree distribution no more changes, i.e.,
+Now, let's assume that the system has envolved to such an equilibrium state that the degree distribution no more changes, i.e.,
 
 
 $$
@@ -62,6 +62,7 @@ then we have the function
 
 $$
 p_k = \frac{k-1}{2}p_{k-1}-\frac{k}{2}p_k \,\,\,\,\, (k>m)
+
 p_m = 1-\frac{m}{2}p_m \,\,\,\,\, (k=m),   (6)
 $$
 
@@ -69,6 +70,7 @@ from which we derive that
 
 $$
 \frac{p_k}{p_{k-1}} = \frac{k-1}{k+2} \,\,\,\,\, (k>m)
+
 p_m = \frac{2}{m+2} \,\,\,\,\, (k=m).   (7)
 $$
 
@@ -84,4 +86,4 @@ $$
 p_k =   \frac{2m(m+1)}{k(k+1)(k+2)}.  \,\,\,\,\,   (9)
 $$
 
-Eq.(9) approximates a power-law distribution with exponent equals -3 when k is large. 
+Eq.(9) approximates a power-law distribution with exponent equals -3 when k is large. This is the same as the result given by the 1999 [paper]((http://www.barabasilab.com/pubs/CCNR-ALB_Publications/199910-15_Science-Emergence/199910-15_Science-Emergence.pdf)).
