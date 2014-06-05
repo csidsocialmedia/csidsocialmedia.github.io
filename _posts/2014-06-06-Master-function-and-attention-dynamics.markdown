@@ -188,6 +188,6 @@ On the contrary, the community can achive highest coverage rate by using the "pr
 
 In real world, the balance between the two goals are archived by the collaboration of two different types of users, "elephants" and "rats". "Elephants" tends to answer questions that have already attracted many answers whereas "rats" tends to answer questions that are seldom answered. 
 
-We show that, a mixture between two strategies at the microscopic level, preferential attachment and repulsion, successfully replicates the distribution of answers across questions in the Stackoverflow dataset, as shown by the following figure.
+We show that, a mixture between two strategies at the microscopic level, preferential attachment and repulsion, successfully replicates the distribution of answers across 10381 questions (the cumulative data in 50 days) in the Stackoverflow dataset, as shown by the following figure. We also provide BA model and reversed BA model with the same number (10381) of nodes for comparison.
 
 <img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/comparison.png" height="300px" width="400px" />
