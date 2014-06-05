@@ -1,5 +1,5 @@
 ---
-title: Entropy: the world in our eyes
+title: Entropy the world in our eyes
 layout: post
 guid:
 comments: true
