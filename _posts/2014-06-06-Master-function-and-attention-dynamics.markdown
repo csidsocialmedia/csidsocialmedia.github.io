@@ -96,6 +96,62 @@ $$
 
 Eq.(11) approximates a power-law distribution with exponent equals -3 when k is large. This is the same as the result given by the 1999 [paper]((http://www.barabasilab.com/pubs/CCNR-ALB_Publications/199910-15_Science-Emergence/199910-15_Science-Emergence.pdf)).
 
+<img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/BA.png" height="300px" width="400px" />
+
+The above figure shows the simulation of BA network with three different sizes. The degree distributions of nodes are always consistent with analytical prediction, independent of simulation size. The Python code for simulation is listed as follows:
+
+    import random
+    import networkx as nx
+    import matplotlib.pyplot as plt
+    import collections
+    import numpy as np
+    from os import listdir
+	
+    # select random subset
+    def _random_subset(seq,m):
+        targets=set()
+        while len(targets)<m:
+            x=random.choice(seq)
+            targets.add(x)
+        return targets
+		
+    #BA model
+    def BA(n, m):
+        G=nx.empty_graph(m)
+        targets=list(range(m))
+        repeated_nodes=[]
+        source=m 
+        while source<n: 
+            G.add_edges_from(zip([source]*m,targets)) 
+            repeated_nodes.extend(targets)
+            repeated_nodes.extend([source]*m) 
+            targets = _random_subset(repeated_nodes,m)
+            source += 1
+        return G
+		
+    # rank plot
+    def rankplot(seq,col,lab,mak,lin):
+        d=sorted(seq,reverse=True) 
+        plt.loglog(d,linestyle=lin,color=col,marker=mak,label=lab)
+	
+	# get data from model simulation
+	#G=BA(10381, 2)
+	G1=BA(200, 2)
+	G2=BA(1000, 2)
+	G3=BA(10000, 2)
+	
+	#plot the result
+	rankplot(nx.degree(G1).values(),'RoyalBlue','Simulation n=200','.','')
+	rankplot(nx.degree(G2).values(),'Orange','Simulation n=1000','.','')
+	rankplot(nx.degree(G3).values(),'ForestGreen','Simulation n=10000','.','')
+	ks=np.linspace(1,10000,100)
+	ps=500*ks**(-0.5)
+	plt.plot(ks,ps,'r-',label='BA model')
+	plt.title("Degree rank plot")
+	plt.ylabel("degree",size=14)
+	plt.xlabel("rank",size=14)
+	plt.legend(numpoints=1,fontsize=12)
+	#plt.show()
 
 ##Growing random graph
 
