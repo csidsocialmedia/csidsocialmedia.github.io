@@ -1,10 +1,10 @@
 ---
-title: Entropy: the world in our eyes
+title: Entropy: the universe in our eyes
 layout: post
 guid:
 comments: true
 tags:
-  - statistical machenics
+  - network
 ---
 
 ![entropy](/media/files/2014-06-05-Entropy-the-world-in-our-eyes/entropy.jpg)
