@@ -47,3 +47,7 @@ Let's call a combination of the n values, such as 100100 or 000000, a microstate
 <sub>Figure cited from [here](https://www.flickr.com/photos/24904322@N02/6137243049/)</sub>
 
 The above figure shows the grave of one of the greatest scientist, Boltzmann, who hanged himself during an attack of depression in 1906. 
+
+To summarize we give the following figure.
+
+<img src="/media/files/2014-06-05-Entropy_the_world_in_our_eyes/entropydemo.png" height="171px" width="381px" />
