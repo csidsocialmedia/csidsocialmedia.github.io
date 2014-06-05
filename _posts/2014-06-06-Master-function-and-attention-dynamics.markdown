@@ -14,15 +14,7 @@ In their 1999 Science [paper](http://www.barabasilab.com/pubs/CCNR-ALB_Publicati
 
 First of all, let's analyze BA model as a practice. We assume that 
 
-n is the number of nodes in the network;
-
-k is the degree of nodes;
-
-m is the fixed number of links carried by every newly added node;
-
-p_k is the fraction of nodes with degree k;
-
-p_k,n is the fraction of nodes with degree k when there are n nodes in the network.
+n is the number of nodes in the network; k is the degree of nodes; m is the fixed number of links carried by every newly added node; p_k is the fraction of nodes with degree k; and p_k,n is the fraction of nodes with degree k when there are n nodes in the network.
 
 Then the probability of a new link attaches to a node of degree k is propotional to kp_k. p_k is the probability that a node of degree k is chosen by random selection. We need to weight it by k because BA model assumes that the probability of a new link connecting a exist node is propotional to its degree. However, after being weighted by k, kp_k is not a "well-defined" probability; it does not add up to 1. So we need to normalize it to 
 
