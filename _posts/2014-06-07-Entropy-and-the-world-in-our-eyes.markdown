@@ -98,4 +98,8 @@ The necessary of adding a constant coeffiecnt k_b = 1.38 * 10^-23 J/K is to make
 
 <img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/macro.png" height="270px" width="455px" />
 
-After briefly reviewing the history of entropy, we are prepared to think an interesting question: what is the driven force behind the evolution of complex systems ? If we understand "observation" as a algorithm that ignores information, it may be easier for us to explain the arrow of time, and also the goal of evolution -  the path and the goal are not determined by the system, but lies deeply in our "observation" algorithm. 
+After briefly reviewing the history of entropy, we are prepared to think an interesting question: what is the driven force behind the evolution of complex systems ? 
+
+Entropy, as introduced, is the bridge connecting "microstates" and "macrostates". Actcually, we can also understand it as the bridge connecting the "real-world" (which, may or may not exists, but we never know) and the "observed world".
+
+If we understand "observation" as a algorithm that ignores information, it may be easier for us to explain the arrow of time, and also the goal of evolution -  the path and the goal are not determined by the system, but lies deeply in our "observation" algorithm. 
