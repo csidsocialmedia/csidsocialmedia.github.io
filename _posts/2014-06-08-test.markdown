@@ -8,9 +8,7 @@ tags:
   - PCI group
 ---
 
-
-![entropy](/media/files/2014-06-05-Entropy-the-world-in-our-eyes/entropy.jpg)
-<sub>Figure by [Kyle Szostek](http://vippasstothespiritworld.blogspot.com/2012/10/entropy-explained.html)</sub>
+<img src="/media/files/2014-06-05-Entropy-the-world-in-our-eyes/entropy.jpg" height="300px" width="400px" />
 
 ##Why natural flow networks are so beautiful
 
