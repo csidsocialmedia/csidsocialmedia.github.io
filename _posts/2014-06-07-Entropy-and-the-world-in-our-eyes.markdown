@@ -53,3 +53,16 @@ To summarize we give the following figure.
 <img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/entropy.png" height="171px" width="381px" />
 
 Let's call a combination of the n values, such as 100100 or 000000, a microstate. And we call the sum of these values a macrostate. Then the logrithmic value of the number of microstates corresponding to a given macrostate, is the [Boltzmann's entropy](http://en.wikipedia.org/wiki/Boltzmann's_entropy_formula) of the macrostate. 
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/1.png" height="114px" width="238px" />
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/2.png" height="103px" width="586px" />
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/3.png" height="43px" width="472px" />
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/4.png" height="280px" width="534px" />
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/5.png" height="238px" width="375px" />
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/macro.png" height="270px" width="455px" />
+
