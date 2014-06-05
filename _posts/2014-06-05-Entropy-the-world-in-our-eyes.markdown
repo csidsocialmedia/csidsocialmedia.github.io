@@ -1,5 +1,5 @@
 ---
-title: Entropy the world in our eyes
+title: Entropy: the world in our eyes
 layout: post
 guid:
 comments: true
@@ -40,3 +40,10 @@ $$
 
 Simple and straighforward, right? This is our metaphor of universe. 
 
+Let's call a combination of the n values, such as 100100 or 000000, a microstate. And we call the sum of these values a macrostate. Then the logrithmic value of the number of microstates corresponding to a given macrostate, is the [Boltzmann's entropy](http://en.wikipedia.org/wiki/Boltzmann's_entropy_formula) of the macrostate. 
+
+
+<img src="/media/files/2014-06-05-Entropy_the_world_in_our_eyes/Boltzmann.jpg" height="320px" width="218px" />
+<sub>Figure cited from [here](https://www.flickr.com/photos/24904322@N02/6137243049/)</sub>
+
+The above figure shows the grave of one of the greatest scientist, Boltzmann, who hanged himself during an attack of depression in 1906. 
