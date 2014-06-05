@@ -1,11 +1,14 @@
 ---
-title: Master function and attention dynamics
+title: Entropy and the world in our eyes
 layout: post
 guid:
 comments: true
 tags:
   - network
 ---
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/text.jpg" height="275px" width="675px" />
+<sub>Figure by [Kyle Szostek](http://vippasstothespiritworld.blogspot.com/2012/10/entropy-explained.html)</sub>
 
 
 ##A piece of codes as the metaphor of universe
@@ -23,7 +26,7 @@ tags:
 The above Python code generates n 0/1 values and sums them up. If we only focus on the output, 
 we will have the following observation
 
-<img src="/media/files/2014-06-05-Entropy-the-world-in-our-eyes/fre.png" height="300px" width="400px" />
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/hist.png" height="300px" width="400px" />
 
 As shown by the figure, the most likely result is n/2 (n=100 in this case), and n/2 - 1 or n/2 + 1 is also very likely to be observed. As the values deviate from n/2, they becomes very unlikely to be observed.
 
@@ -36,5 +39,17 @@ $$
 $$
 
 Simple and straighforward, right? This is our metaphor of universe. 
+
+Let's call a combination of the n values, such as 100100 or 000000, a microstate. And we call the sum of these values a macrostate. Then the logrithmic value of the number of microstates corresponding to a given macrostate, is the [Boltzmann's entropy](http://en.wikipedia.org/wiki/Boltzmann's_entropy_formula) of the macrostate. 
+
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/grave.jpg" height="320px" width="218px" />
+<sub>Figure cited from [here](https://www.flickr.com/photos/24904322@N02/6137243049/)</sub>
+
+The above figure shows the grave of one of the greatest scientist, Boltzmann, who hanged himself during an attack of depression in 1906. 
+
+To summarize we give the following figure.
+
+<img src="/media/files/2014-06-07-Entropy-and-the-world-in-our-eyes/entropy.png" height="171px" width="381px" />
 
 Let's call a combination of the n values, such as 100100 or 000000, a microstate. And we call the sum of these values a macrostate. Then the logrithmic value of the number of microstates corresponding to a given macrostate, is the [Boltzmann's entropy](http://en.wikipedia.org/wiki/Boltzmann's_entropy_formula) of the macrostate. 
