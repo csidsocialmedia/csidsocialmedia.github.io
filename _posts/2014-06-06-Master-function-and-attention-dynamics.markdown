@@ -169,3 +169,25 @@ From Eq. (16), we find that the ratio of two fractions is independent of degree 
 $$
 p_k =   \frac{1}{m+1}(\frac{m}{m+1})^{k-m}.  \,\,\,\,\,   (18)
 $$
+
+##Preferential repultion
+
+Now let's consider a "reversed" verion of the BA model, i.e., the probability of obtaining new links are proportional to 1/k of the degree.
+
+
+
+##The dynamics of collective attention in answering questions
+
+A successful Q&A community should have two properties: high accepting rate of answers and high coverage rate of questions. To achive high accepting rate, a question should attract the competition between many answers so that a good answer is more likely to emerge. But this conflicts with the other goal: high coverage, which is maximized when each question only gets one answer. 
+
+We suggestion that, to sustain itself, a community should balance between these two goals. To understand this balance, let's consider two extreme cases.
+
+In the first case, the community only cares about the accepting rate. So it will assign all answering effort to some very difficult or controversial questions. The classical BA model can be used to describe this strategy: in clickstream networks containing questions as nodes and successive answering behavior as links, the degree distribution is power-law. A few questions attract most of answers while a lot of questions are not answered satisfyingly. 
+
+On the contrary, the community can achive highest coverage rate by using the "preferential repultion" strategy. This will balance the answers across questions and maximize the coverage.
+
+In real world, the balance between the two goals are archived by the collaboration of two different types of users, "elephants" and "rats". "Elephants" tends to answer questions that have already attracted many answers whereas "rats" tends to answer questions that are seldom answered. 
+
+We show that, a mixture between two strategies at the microscopic level, preferential attachment and repulsion, successfully replicates the distribution of answers across questions in the Stackoverflow dataset, as shown by the following figure.
+
+<img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/comparison.png" height="300px" width="400px" />
