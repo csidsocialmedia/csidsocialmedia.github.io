@@ -170,10 +170,58 @@ $$
 p_k =   \frac{1}{m+1}(\frac{m}{m+1})^{k-m}.  \,\,\,\,\,   (18)
 $$
 
-##Preferential repultion
+The follwoing codes are used to generate the growing random graph
+
+    #random network model
+    def ranG(n, m):
+        G=nx.empty_graph(m)
+        targets=list(range(m))
+        unique_nodes=set()
+        source=m 
+        while source<n: 
+            G.add_edges_from(zip([source]*m,targets))
+            unique_nodes.update(targets)
+            unique_nodes.add(source) 
+            targets = _random_subset(list(unique_nodes),m)
+            source += 1
+        return G
+
+##Reversed BA model
 
 Now let's consider a "reversed" verion of the BA model, i.e., the probability of obtaining new links are proportional to 1/k of the degree.
 
+
+
+The follwoing codes are used to generate the reversed BA model
+
+    #weighted choice
+    def weighted_choice_sub(weights):
+        rnd = random.random() * sum(weights)
+        for i, w in enumerate(weights):
+            rnd -= w
+            if rnd < 0:
+                return i
+	
+    #weighted selection
+    def weightedDegreeSelection(nodeOccurance,m,gamma):
+        c = collections.Counter(nodeOccurance)
+        w = np.array(c.values())**float(gamma)
+        s = [c.keys()[j] for j in [weighted_choice_sub(w) for i in range(m)]]
+        return s
+	
+	#reverse BA model
+	def rBA(n, m):
+	    G=nx.empty_graph(m)
+	    targets=list(range(m))
+	    repeated_nodes=[]
+	    source=m 
+	    while source<n: 
+	        G.add_edges_from(zip([source]*m,targets)) 
+	        repeated_nodes.extend(targets)
+	        repeated_nodes.extend([source]*m) 
+	        targets = weightedDegreeSelection(repeated_nodes,m,-1)
+	        source += 1
+	    return G
 
 
 ##The dynamics of collective attention in answering questions
