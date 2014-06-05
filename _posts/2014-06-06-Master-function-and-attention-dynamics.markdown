@@ -95,3 +95,52 @@ p_k =   \frac{2m(m+1)}{k(k+1)(k+2)}.  \,\,\,\,\,   (11)
 $$
 
 Eq.(11) approximates a power-law distribution with exponent equals -3 when k is large. This is the same as the result given by the 1999 [paper]((http://www.barabasilab.com/pubs/CCNR-ALB_Publications/199910-15_Science-Emergence/199910-15_Science-Emergence.pdf)).
+
+
+##Growing random graph
+
+Now let's analyze a different network model. Everything is the same execpt that the new node randomly select m friends without considering their degrees.
+
+The probability of a new link attaches to a node of degree k is propotional to p_k. We do not need to weight or normalize this variable. 
+
+The total number of new links attaching to nodes with degree k is m*p_k. So we have 
+
+$$
+(n+1)p_{k,n+1}-np_{k,n} = \Delta k = mp_{k-1}-mp_k, \,\,\,\,\,   (12)
+$$
+
+and
+
+$$
+(n+1)p_{m,n+1}-np_{m,n} = \Delta m =  1-mp_m. \,\,\,\,\,   (13)
+$$
+
+Now, let's focus on the stationary solutions of these euqations by considering Eq. (5):
+
+$$
+p_k = mp_{k-1}-mp_k, \,\,\,\,\, (k>m) (14)
+$$
+
+and
+
+$$
+p_m =  1-mp_m. \,\,\,\,\, (k=m),   (15)
+$$
+
+from which we derive that
+
+$$
+\frac{p_k}{p_{k-1}} = \frac{m}{m+1} \,\,\,\,\, (k>m),   (16)
+$$
+
+and 
+
+$$
+p_m = \frac{1}{m+1} \,\,\,\,\, (k=m).   (17)
+$$
+
+From Eq. (16), we find that the ratio of two fractions is independent of degree k, this is true because in our randomly growing network, new nodes do not consider the degree of existed nodes in setting up links. To solve p_k, we construct Eq. (10) again and find the solution 
+
+$$
+p_k =   \frac{1}{m+1}(\frac{m}{m+1})^{k-m}.  \,\,\,\,\,   (18)
+$$
