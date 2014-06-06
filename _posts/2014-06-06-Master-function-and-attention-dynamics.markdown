@@ -170,7 +170,9 @@ $$
 p_k =   \frac{1}{m+1}(\frac{m}{m+1})^{k-m}.  \,\,\,\,\,   (18)
 $$
 
-The follwoing codes are used to generate the growing random graph
+<img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/random.png" height="300px" width="400px" />
+
+The above figure shows the simulation of random growing network with three different sizes. The degree distributions of nodes are always consistent with analytical prediction, independent of simulation size. The Python code for simulation is listed as follows:
 
     #random network model
     def ranG(n, m):
