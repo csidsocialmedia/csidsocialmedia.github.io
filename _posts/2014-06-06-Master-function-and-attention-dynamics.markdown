@@ -228,20 +228,16 @@ The follwoing codes are used to generate the reversed BA model
 
 ##The dynamics of collective attention in answering questions
 
-A successful Q&A community should have two properties: high accepting rate of answers and high coverage rate of questions. To achive high accepting rate, a question should attract the competition between many answers so that a good answer is more likely to emerge. But this conflicts with the other goal: high coverage, which is maximized when each question only gets one answer. 
+A successful Q&A community should balance between answer quality and question coverage. This trade-off is constrained by the limitation of collective attention. To answer difficult/controversial questions, the community must "focus". Meanwhile, to imporve the coverage rate, the community has to assign attention equaly among questions.
 
-We suggestion that, to sustain itself, a community should balance between these two goals. To understand this balance, let's consider two extreme cases.
+We suggest that the studed StackOverflow (SO) community archive this balance by allowing two different strategies at the individual level. The contributors of SO can be divided into two groups, "elephants" and "rats". The former tends to embrace competition in answer questions whereas the latter tends to avoid competitions.
 
-In the first case, the community only cares about the accepting rate. So it will assign all answering effort to some very difficult or controversial questions. The classical BA model can be used to describe this strategy: in clickstream networks containing questions as nodes and successive answering behavior as links, the degree distribution is power-law. A few questions attract most of answers while a lot of questions are not answered satisfyingly. 
+If we construct clickstream networks in which nodes are questions and links are user's succesive answering of questions, these two different stragtegies correspond to two network growth mechanims. In particular, "elephant" strategy corresponds to BA model and "rat" strategy corresponds to the revsered BA model. 
 
-On the contrary, the community can achive highest coverage rate by using the "preferential repultion" strategy. This will balance the answers across questions and maximize the coverage.
-
-In real world, the balance between the two goals are archived by the collaboration of two different types of users, "elephants" and "rats". "Elephants" tends to answer questions that have already attracted many answers whereas "rats" tends to answer questions that are seldom answered. 
-
-We show that, a mixture between two strategies at the microscopic level, preferential attachment and repulsion, successfully replicates the distribution of answers across 10381 questions (the cumulative data in 50 days) in the Stackoverflow dataset, as shown by the following figure. We also provide BA model and reversed BA model with the same number (10381) of nodes for comparison.
+We show that, a mixture of BA and revsered BA with a ratio of 7:3, successfully replicates the distribution of answers across 10381 questions (the cumulative data in 50 days) in the Stackoverflow dataset, as shown by the following figure.
 
 <img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/comparison.png" height="300px" width="400px" />
 
 ![networks](/media/files/2014-06-06-Master-function-and-attention-dynamics/networks.png)
 
-The above figure compares three different types of machenisms. There are 500 nodes and 1000 links in each of the networks. Please node the difference between the networks in terms of the distribution of degree.
+The above figure shows three different types of machenisms. We also include the StackOverflow data set in the first 8 days for comparison. There are about 500 nodes and 1000 links in each network. Please note that the difference between the networks in terms of the distribution of degree (the size of node is propotional to the square of degree).
