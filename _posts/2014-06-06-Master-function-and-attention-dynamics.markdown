@@ -244,4 +244,4 @@ We show that, a mixture between two strategies at the microscopic level, prefere
 
 ![networks](/media/files/2014-06-06-Master-function-and-attention-dynamics/networks.png)
 
-The above figure compares three different types of machenisms when there are 500 nodes and 1000 links in the network.
+The above figure compares three different types of machenisms. There are 500 nodes and 1000 links in each of the networks. Please node the difference between the networks in terms of the distribution of degree.
