@@ -238,7 +238,7 @@ $$
 which gives
 
 $$
-\frac{p_k} \sim \frac{C}{C+1} C^{m-k}, \,\,\,\,\,   (26)
+p_k \sim \frac{C}{C+1} C^{m-k}, \,\,\,\,\,   (26)
 $$
 
 According to the definition of [Harmonic series](http://en.wikipedia.org/wiki/Harmonic_series_(mathematics)), the sums of the series have logarithmic growth, in particular, 
