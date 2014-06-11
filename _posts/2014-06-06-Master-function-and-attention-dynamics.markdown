@@ -192,31 +192,72 @@ The above figure shows the simulation of random growing network with three diffe
 
 Now let's consider a "reversed" verion of the BA model, i.e., the probability of obtaining new links is proportional to the reciprocal of degree 1/k.
 
-We need to normalize 1/k into
+We need to normalize 1/k into 
 
 $$
-\frac{\frac{1}{k}}{  \sum_{k=1}^{k_{max}} \frac{1}{k} }. \,\,\,\,\,   (19)
+\frac{\frac{1}{k}}{  \sum_{k=m}^{k_{max}} \frac{1}{k} } = \frac{1}{Ck}. \,\,\,\,\,   (19)
 $$
+
 
 Then the probability of m new link attaches to nodes of degree k is 
 
 $$
-m p_k \frac{\frac{1}{k}}{  \sum_{k=1}^{k_{max}} \frac{1}{k} }. \,\,\,\,\,   (20)
+\frac{m p_k}{Ck}. \,\,\,\,\,   (20)
 $$
 
 Considering the stationary solution
 
 $$
-(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B =m p_{k-1} \frac{\frac{1}{k-1}}{  \sum_{k=1}^{k_{max}} \frac{1}{k-1} } - m p_k \frac{\frac{1}{k}}{  \sum_{k=1}^{k_{max}} \frac{1}{k} }, \,\,\,\,\,   (21)
+(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B =\frac{m p_{k-1}}{C(k-1)} - \frac{m p_k}{Ck}, \,\,\,\,\,   (21)
+$$
+
+and 
+
+$$
+(n+1)p_{m,n+1}-np_{m,n} = \Delta m = p_m = 1 - B = 1 - \frac{m p_m}{Cm}, \,\,\,\,\,   (22)
 $$
 
 which leads to
 
 $$
-\frac{p_k}{p_{k-1}}=\frac{\frac{m}{k-1}}{\sum_{k=1}^{k_{max}}\frac{1}{k} + \frac{m}{k} }. \,\,\,\,\,   (22)
+\frac{p_k}{p_{k-1}}=\frac{\frac{m}{k-1}}{c+\frac{m}{k}}, \,\,\,\,\,   (23)
 $$
 
-The follwoing codes are used to generate the reversed BA model
+and 
+
+$$
+p_m = \frac{C}{C + 1}. \,\,\,\,\,   (24)
+$$
+
+As m is usually a small number (m=2 in classic BA model), when k is very large, we can ignore m/k and m/(k-1) to get 
+
+$$
+\frac{p_k}{p_{k-1}} \sim \frac{1}{C}, \,\,\,\,\,   (25)
+$$
+
+which gives
+
+$$
+\frac{p_k} \sim \frac{C}{C+1} C^{m-k}, \,\,\,\,\,   (26)
+$$
+
+According to the definition of [Harmonic series](http://en.wikipedia.org/wiki/Harmonic_series_(mathematics)), the sums of the series have logarithmic growth, in particular, 
+
+$$
+\sum_{n_1}^{k} \frac{1}{n} = lnk + \gamma, \,\,\,\,\,   (27)
+$$
+
+in which gamma is the Euler–Mascheroni constant approcimates 0.58. So we have
+
+$$
+C = \sum_{k=m}^{k_{max}} \frac{1}{k} = lnk - \gamma - (ln(m-1) - \gamma) = lnk - ln(m-1) , \,\,\,\,\,   (27)
+$$
+
+In particular, when m = 2, C = lnk.
+
+<img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/rBA.png" height="300px" width="400px" />
+
+The above figure shows the simulation of revsered BA networks of three different sizes. The degree distributions of nodes are always consistent with analytical prediction, independent of simulation size. The Python code for simulation is listed as follows:
 
     #weighted choice
     def weighted_choice_sub(weights):
