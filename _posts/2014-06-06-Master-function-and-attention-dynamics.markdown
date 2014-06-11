@@ -204,11 +204,11 @@ $$
 m p_k \frac{\frac{1}{k}}{  \sum_{k=1}^{k_{max}} \frac{1}{k} }. \,\,\,\,\,   (20)
 $$
 
-Considering the stationary solutions
+Considering the stationary solution
 
-(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B, \,\,\,\,\,   (21)
-
-
+$$
+(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B =m p_k \frac{\frac{1}{(k-1)}}{  \sum_{k=1}^{k_{max}} \frac{1}{(k-1)} } - m p_k \frac{\frac{1}{k}}{  \sum_{k=1}^{k_{max}} \frac{1}{k} }, \,\,\,\,\,   (21)
+$$
 
 The follwoing codes are used to generate the reversed BA model
 
