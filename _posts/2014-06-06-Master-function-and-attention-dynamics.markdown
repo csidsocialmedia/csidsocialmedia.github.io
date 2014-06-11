@@ -16,18 +16,16 @@ First of all, let's analyze BA model as a practice. We assume that
 
 n is the number of nodes in the network; k is the degree of nodes; m is the fixed number of links carried by every newly added node; p_k is the fraction of nodes with degree k; and p_k,n is the fraction of nodes with degree k when there are n nodes in the network.
 
-Then the probability of a new link attaches to a node of degree k is propotional to kp_k. p_k is the probability that a node of degree k is chosen by random selection. We need to weight it by k because BA model assumes that the probability of a new link connecting a exist node is propotional to its degree. However, after being weighted by k, kp_k is not a "well-defined" probability; it does not add up to 1. So we need to normalize it to 
-
-
-$$
-\frac{kp_k}{\sum_{k=1}^{k_{max}} kp_k} = \frac{kp_k}{2m}. \,\,\,\,\,   (1)
-$$
-
-The denominator is actually the expected degree of nodes, which equals to 2m because each node brings m links and each link contributes two degrees. So the total number of new links attaching to nodes with degree k is 
-
+The probability of a new link attaches to a node of degree k is propotional to k/sum(k). This probability increases to 
 
 $$
-\frac{mkp_k}{\sum_{k=1}^{k_{max}} kp_k} = \frac{kp_k}{2}. \,\,\,\,\,   (2)
+\frac{k}{\sum_{k=1}^{k_{max}} k}n p_k = \frac{k}{\frac{1}{n}\sum_{k=1}^{k_{max}} k}p_k=\frac{k}{2m}p_k.\,\,\,\,\,   (1)
+$$
+
+when we consider all nodes of degree k. If we consider the competition for the m links brought by a new node, we have
+
+$$
+m\frac{k}{2m}p_k= \frac{k}{2}p_k. \,\,\,\,\,   (2)
 $$
 
 At each time step, the number of nodes with degree k changes. The change is composed by two parts: the increase contributed by the nodes moving from degree k-1 to k and and the loss caused by the nodes moving from degree k to k+1. Therefore we can express this change as:
