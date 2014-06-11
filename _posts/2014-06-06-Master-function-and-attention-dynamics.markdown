@@ -195,18 +195,18 @@ Now let's consider a "reversed" verion of the BA model, i.e., the probability of
 We need to normalize 1/k into
 
 $$
-\frac{1/k}{\sum_{k=1}^{k_{max}}frac{1/k} }. \,\,\,\,\,   (19)
+\frac{frac{1}{k}}{  \sum_{k=1}^{k_{max}} frac{1}{k} }. \,\,\,\,\,   (19)
 $$
 
 Then the probability of m new link attaches to nodes of degree k is 
 
 $$
-m p_k \frac{1/k}{\sum_{k=1}^{k_{max}}frac{1/k} }. \,\,\,\,\,   (20)
+m p_k \frac{frac{1}{k}}{  \sum_{k=1}^{k_{max}} frac{1}{k} }. \,\,\,\,\,   (20)
 $$
 
 Considering the stationary solutions
 
-(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = m p_{k-1} \frac{1/(k-1)}{\sum_{k=1}^{k_{max}}frac{1/(k-1)} } - m p_k \frac{1/k}{\sum_{k=1}^{k_{max}}frac{1/k} }
+(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = m p_k \frac{frac{1}{k}}{  \sum_{k=1}^{k_{max}} frac{1}{k} } -m p_k \frac{frac{1}{k}}{  \sum_{k=1}^{k_{max}} frac{1}{k} }
 
 
 
