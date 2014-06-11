@@ -85,7 +85,7 @@ $$
 
 In statistical physics, Z is also called the partition function of system. It is the function of temperature T and maget field strength H. 
 
-See the following python code:
+See the following python code cited from [here](http://www.physics.rutgers.edu/~haule/681/src_MC/python_codes/ising.py):
 
         #!/usr/bin/env python
     """
@@ -229,5 +229,20 @@ See the following python code:
         legend(loc='best')
         show()
   
+The following figure shows the result of simulation on a larger grid (than the one in the code)
+
+![Isingresult](/media/files/2014-06-11-Ising-model-and-renormalization-group/Isingresult.png)
+
+The first row shows T>Tc, the second row shows T~Tc, and the third row shows T<Tc.
   
 ##Renormalization group
+
+See the following figures cited from [here](http://www.kineticallyconstrained.com/2012/04/renormalisation-group.html):
+
+![rgising1](/media/files/2014-06-11-Ising-model-and-renormalization-group/rgising1.png)
+
+![rgising2](/media/files/2014-06-11-Ising-model-and-renormalization-group/rgising2.png)
+
+![rgising3](/media/files/2014-06-11-Ising-model-and-renormalization-group/rgising3.png)
+
+![rgising4](/media/files/2014-06-11-Ising-model-and-renormalization-group/rgising4.png)
