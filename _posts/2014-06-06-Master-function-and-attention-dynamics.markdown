@@ -124,9 +124,9 @@ The above figure shows the simulation of BA network with three different sizes. 
 
 Now let's analyze a different network model. Everything is the same execpt that the new node randomly select m friends without considering their degrees.
 
-The probability of a new link attaches to a node of degree k is propotional to p_k. We do not need to weight or normalize this variable. 
+The probability of a new link attaches to a node of degree k is propotional to 1/n. This probability increases to (1/n)*n*p_k = p_k when we consider all nodes of degree k. If we consider the competition for the m links brought by a new node, we have m*p_k.
 
-The total number of new links attaching to nodes with degree k is m*p_k. So we have 
+Similar to the BA model, we can derive that
 
 $$
 (n+1)p_{k,n+1}-np_{k,n} = \Delta k = mp_{k-1}-mp_k, \,\,\,\,\,   (12)
