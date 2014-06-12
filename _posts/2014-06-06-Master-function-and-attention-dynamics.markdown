@@ -286,6 +286,45 @@ The above figure shows the simulation of revsered BA networks of three different
 	        source += 1
 	    return G
 
+##Mixture between random graph and BA model
+
+Now we assume that a new node chooses a random friend with probability alpha and choose a friend with high 
+degree with a probability 1-alpha. 
+
+Within the new m links, the following number of links are obtained by all nodes of degree k:
+
+$$
+(\alpha \frac{1}{n} + (1-\alpha) \frac{k}{\sum k}) n p_k m = (\alpha m +\frac{1-alpha}{2}k)p_k, \,\,\,\,\,   (28)
+$$
+
+We can derive that
+
+$$
+\frac{p_k}{p_{k-1}} = \frac{2 \alpha m + (1-\alpha)(k-1)}{2 + 2 \alpha m +(1-\alpha)k} = 1- frac{3-\alpha}{2+2\apha m + (1-\alpha)k}\,\,\,\,\,    (29)
+$$
+
+and 
+
+$$
+p_m = \frac{1}{1+\frac{1+\alpha}{2}m} \,\,\,\,\,   (30)
+$$
+
+
+When k is very large, 2 + 2 alpha m is small compared to (1-alpha)k, so we can write Eq. (29) as
+
+$$
+\frac{p_k}{p_{k-1}} \approx 1- \frac{3-\alpha}{1-alpha} \frac{1}{k} \approx (1-\frac{1}{k})^{\frac{3-\alpha}{1-\alpha}}=\frac{k}{k-1}^{-\frac{3-alpha}{1-alpha}}\,\,\,\,\,   (31)
+$$
+
+By unfolding p_k/p_m as a long series like Eq. (10), we derive that
+
+$$
+p_k \approx \frac{1}{1+\frac{1+\alpha}{2}m} \frac{k}{m}^{-\frac{3-alpha}{1-alpha}} \,\,\,\,\,   (30)
+$$
+
+![mxedRandomBA](/media/files/2014-06-06-Master-function-and-attention-dynamics/mxedRandomBA.png)
+
+The above figure shows (1) the rank-order plot of mixture model when 10*alpha changes from 0 to 10; (2) the OLS fitting of the zipf exponent in log-log axes by total data (blue lines) and tail data (the largest 100 values, green lines). The tail fitting is better because when alpha is large, the distribution only approximates power-law in the tail. (3) The empirical values of power law exponent vs. alpha in two kinds of fittings and the thoretical curve (red line). Note that we fitted the data using rank-order plot (zipf-like), so we need to convert the fitted parameter b into 1+1/b in order to obatin power-law exponent. It turns out that theoretical curve only describes the data when alpha is small. This makes sense because when alpha approaches 1 the power-law distribution degenerates into an exponential distribution (Eq. (18)).
 
 ##The dynamics of collective attention in answering questions
 
