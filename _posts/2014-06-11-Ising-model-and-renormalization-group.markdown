@@ -50,12 +50,16 @@ E_{\{+1-1-1\}}=J+H, \,\,\,\,\,   (6)
 $$
 $$
 E_{\{-1+1+1\}}=J-H, \,\,\,\,\,   (7)
+$$
 $$ 
 E_{\{-1+1-1\}}=J+H, \,\,\,\,\,   (8)
 $$
+$$
 E_{\{-1-1+1\}}=J+H, \,\,\,\,\,   (9)
 $$
+$$
 E_{\{-1-1-1\}}=-3J+3H, \,\,\,\,\,   (10)
+$$
 $$
 
 and find that +1,+1,+1 is the state with minimum enegry.
@@ -246,3 +250,9 @@ See the following figures cited from [here](http://www.kineticallyconstrained.co
 ![rgising3](/media/files/2014-06-11-Ising-model-and-renormalization-group/rgising3.png)
 
 ![rgising4](/media/files/2014-06-11-Ising-model-and-renormalization-group/rgising4.png)
+
+There is a striking feature of Ising model. When T ~ Tc, the strcuture of the grid is invariant of scale. 
+
+As shown by the following video, when the temperature approaches the cirtical temperature, the information (of the ratio between the number of white and black spins) can not be compressed. 
+
+< iframe title="YouTube video player" width="480" height="390" src="https://www.youtube.com/watch?v=MxRddFrEnPc" frameborder="0" allowfullscreen>< /iframe>
