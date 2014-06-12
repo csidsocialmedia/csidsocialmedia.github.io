@@ -294,13 +294,13 @@ degree with a probability 1-alpha.
 Within the new m links, the following number of links are obtained by all nodes of degree k:
 
 $$
-(\alpha \frac{1}{n} + (1-\alpha) \frac{k}{\sum k}) n p_k m = (\alpha m +\frac{1-alpha}{2}k)p_k, \,\,\,\,\,   (28)
+(\alpha \frac{1}{n} + (1-\alpha) \frac{k}{\sum k}) n p_k m = (\alpha m +\frac{1-\alpha}{2}k)p_k, \,\,\,\,\,   (28)
 $$
 
 We can derive that
 
 $$
-\frac{p_k}{p_{k-1}} = \frac{2 \alpha m + (1-\alpha)(k-1)}{2 + 2 \alpha m +(1-\alpha)k} = 1- frac{3-\alpha}{2+2\apha m + (1-\alpha)k}\,\,\,\,\,    (29)
+\frac{p_k}{p_{k-1}} = \frac{2 \alpha m + (1-\alpha)(k-1)}{2 + 2 \alpha m +(1-\alpha)k} = 1- \frac{3-\alpha}{2+2\alpha m + (1-\alpha)k}\,\,\,\,\,    (29)
 $$
 
 and 
@@ -313,13 +313,13 @@ $$
 When k is very large, 2 + 2 alpha m is small compared to (1-alpha)k, so we can write Eq. (29) as
 
 $$
-\frac{p_k}{p_{k-1}} \approx 1- \frac{3-\alpha}{1-alpha} \frac{1}{k} \approx (1-\frac{1}{k})^{\frac{3-\alpha}{1-\alpha}}=\frac{k}{k-1}^{-\frac{3-alpha}{1-alpha}}\,\,\,\,\,   (31)
+\frac{p_k}{p_{k-1}} \approx 1- \frac{3-\alpha}{1-alpha} \frac{1}{k} \approx (1-\frac{1}{k})^{\frac{3-\alpha}{1-\alpha}}=\frac{k}{k-1}^{-\frac{3-\alpha}{1-\alpha}}\,\,\,\,\,   (31)
 $$
 
 By unfolding p_k/p_m as a long series like Eq. (10), we derive that
 
 $$
-p_k \approx \frac{1}{1+\frac{1+\alpha}{2}m} \frac{k}{m}^{-\frac{3-alpha}{1-alpha}} \,\,\,\,\,   (30)
+p_k \approx \frac{1}{1+\frac{1+\alpha}{2}m} \frac{k}{m}^{-\frac{3-\alpha}{1-\alpha}} \,\,\,\,\,   (30)
 $$
 
 ![mxedRandomBA](/media/files/2014-06-06-Master-function-and-attention-dynamics/mxedRandomBA.png)
