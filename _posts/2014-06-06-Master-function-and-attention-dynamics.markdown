@@ -193,41 +193,41 @@ Now let's consider a "reversed" verion of the BA model, i.e., the probability of
 We assume that 
 
 $$
-\sum_{i=1}^{n} \frac{1}{k}  \approx n\frac{1}{m}. \,\,\,\,\,   (19)
+\sum_{i=1}^{n} \frac{1}{k}  \approx n\frac{1}{2m}. \,\,\,\,\,   (19)
 $$
 
 
 Then the probability of m new link attaches to nodes of degree k is 
 
 $$
- \frac{\frac{1}{k}}{\sum_{i=1}^{n} \frac{1}{k}} np_k m \approx \frac{m^2}{k}p_k. \,\,\,\,\,   (20)
+ \frac{\frac{1}{k}}{\sum_{i=1}^{n} \frac{1}{k}} np_k m \approx \frac{2m^2}{k}p_k. \,\,\,\,\,   (20)
 $$
 
 Considering the stationary solution
 
 $$
-(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B \approx\frac{m^2}{k}p_k-\frac{m^2}{k-1}p_{k-1}, \,\,\,\,\,   (21)
+(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B \approx\frac{2m^2}{k}p_k-\frac{2m^2}{k-1}p_{k-1}, \,\,\,\,\,   (21)
 $$
 
 and 
 
 $$
-(n+1)p_{m,n+1}-np_{m,n} = \Delta m = p_m = 1 - B = 1-\frac{m^2}{m}p_{m}, \,\,\,\,\,   (22)
+(n+1)p_{m,n+1}-np_{m,n} = \Delta m = p_m = 1 - B = 1-\frac{2m^2}{m}p_{m}, \,\,\,\,\,   (22)
 $$
 
 which leads to
 
 $$
-\frac{p_k}{p_{k-1}}=\frac{k}{k-1}\frac{m^2}{k+m^2}, \,\,\,\,\,   (23)
+\frac{p_k}{p_{k-1}}=\frac{k}{k-1}\frac{2m^2}{k+2m^2}, \,\,\,\,\,   (23)
 $$
 
 and 
 
 $$
-p_m = \frac{1}{1 + m}. \,\,\,\,\,   (24)
+p_m = \frac{1}{1 + 2m}. \,\,\,\,\,   (24)
 $$
 
-As m is usually a small number (m=2 in classic BA model), when k is very large, we can ignore m/k and m/(k-1) to get 
+As m is usually a small number (m=2 in classic BA model), when k is very large, we assume 2m^2/(k+2m^2) approximate 1/k to get 
 
 $$
 \frac{p_k}{p_{k-1}} \sim \frac{1}{k-1}, \,\,\,\,\,   (25)
@@ -236,7 +236,7 @@ $$
 which gives
 
 $$
-p_k \approx \frac{1}{1 + m} \frac{1}{m(m+1)(m+2)...(k-1)}=\frac{1}{1 + m}\frac{(m-1)!}{(k-1)!}=\frac{1}{1 + m}\frac{e^{ln[(m-1)!]}}{e^{ln[(k-1)!]}}, \,\,\,\,\,   (26)
+p_k \approx \frac{1}{1 + m} \frac{1}{m(m+1)(m+2)...(k-1)}=\frac{1}{1 + 2m}\frac{(m-1)!}{(k-1)!}=\frac{1}{1 + m}\frac{e^{ln[(m-1)!]}}{e^{ln[(k-1)!]}}, \,\,\,\,\,   (26)
 $$
 
 According to [Stirling's approximation](http://en.wikipedia.org/wiki/Stirling's_approximation), 
@@ -251,7 +251,7 @@ $$
 p_k \approx \frac{1}{1 + m} \frac{(m-1)^{m-1}}{(k-1)^{k-1}}e^{k-m}, \,\,\,\,\,   (27)
 $$
 
-In particular, when m = 2, p_k = (k-1)^(1-k) * e^(k-2) *1/3.
+In particular, when m = 2, p_k = (k-1)^(1-k) * e^(k-2) *1/5.
 
 <img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/reverseBA.png" height="300px" width="400px" />
 
