@@ -248,7 +248,7 @@ $$
 So we have
 
 $$
-p_k \approx \frac{1}{1 + m} \frac{(m-1)^{m-1}}{(k-1)^{k-1}}e^{k-m}, \,\,\,\,\,   (27)
+p_k \approx \frac{1}{1 + 2m} \frac{(m-1)^{m-1}}{(k-1)^{k-1}}e^{k-m}, \,\,\,\,\,   (27)
 $$
 
 In particular, when m = 2, p_k = (k-1)^(1-k) * e^(k-2) *1/5.
