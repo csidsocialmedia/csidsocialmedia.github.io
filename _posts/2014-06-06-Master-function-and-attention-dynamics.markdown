@@ -190,68 +190,68 @@ The above figure shows the simulation of random growing network with three diffe
 
 Now let's consider a "reversed" verion of the BA model, i.e., the probability of obtaining new links is proportional to the reciprocal of degree 1/k.
 
-We need to normalize 1/k into 
+We assume that 
 
 $$
-\frac{\frac{1}{k}}{  \sum_{k=m}^{k_{max}} \frac{1}{k} } = \frac{1}{Ck}. \,\,\,\,\,   (19)
+\sum_{i=1}^{n} \frac{1}{k}  \approx n\frac{1}{m}. \,\,\,\,\,   (19)
 $$
 
 
 Then the probability of m new link attaches to nodes of degree k is 
 
 $$
-\frac{m p_k}{Ck}. \,\,\,\,\,   (20)
+ \frac{\frac{1}{k}}{\sum_{i=1}^{n} \frac{1}{k}} np_k m \approx \frac{m^2}{k}p_k. \,\,\,\,\,   (20)
 $$
 
 Considering the stationary solution
 
 $$
-(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B =\frac{m p_{k-1}}{C(k-1)} - \frac{m p_k}{Ck}, \,\,\,\,\,   (21)
+(n+1)p_{k,n+1}-np_{k,n} = \Delta k = p_k = A - B \approx\frac{m^2}{k}p_k-\frac{m^2}{k-1}p_{k-1}, \,\,\,\,\,   (21)
 $$
 
 and 
 
 $$
-(n+1)p_{m,n+1}-np_{m,n} = \Delta m = p_m = 1 - B = 1 - \frac{m p_m}{Cm}, \,\,\,\,\,   (22)
+(n+1)p_{m,n+1}-np_{m,n} = \Delta m = p_m = 1 - B = 1-\frac{m^2}{m}p_{m}, \,\,\,\,\,   (22)
 $$
 
 which leads to
 
 $$
-\frac{p_k}{p_{k-1}}=\frac{\frac{m}{k-1}}{c+\frac{m}{k}}, \,\,\,\,\,   (23)
+\frac{p_k}{p_{k-1}}=\frac{k}{k-1}\frac{m^2}{k+m^2}, \,\,\,\,\,   (23)
 $$
 
 and 
 
 $$
-p_m = \frac{C}{C + 1}. \,\,\,\,\,   (24)
+p_m = \frac{1}{1 + m}. \,\,\,\,\,   (24)
 $$
 
 As m is usually a small number (m=2 in classic BA model), when k is very large, we can ignore m/k and m/(k-1) to get 
 
 $$
-\frac{p_k}{p_{k-1}} \sim \frac{1}{C}, \,\,\,\,\,   (25)
+\frac{p_k}{p_{k-1}} \sim \frac{1}{k-1}, \,\,\,\,\,   (25)
 $$
 
 which gives
 
 $$
-p_k \sim \frac{C}{C+1} C^{m-k}, \,\,\,\,\,   (26)
+p_k \approx \frac{1}{1 + m} \frac{1}{m(m+1)(m+2)...(k-1)}=\frac{1}{1 + m}\frac{(m-1)!}{(k-1)!}=\frac{1}{1 + m}\frac{e^{ln[(m-1)!]}}{e^{ln[(k-1)!]}}, \,\,\,\,\,   (26)
 $$
 
-According to the definition of [Harmonic series](http://en.wikipedia.org/wiki/Harmonic_series_(mathematics)), the sums of the series have logarithmic growth, in particular, 
+According to [Stirling's approximation](http://en.wikipedia.org/wiki/Stirling's_approximation), 
 
 $$
-\sum_{n_1}^{k} \frac{1}{n} = lnk + \gamma, \,\,\,\,\,   (27)
+ln(n!) \approx nln(n) - n. \,\,\,\,\,   (27)
 $$
 
-in which gamma is the Euler–Mascheroni constant approcimates 0.58. So we have
+So we have
 
 $$
-C = \sum_{k=m}^{k_{max}} \frac{1}{k} = lnk - \gamma - (ln(m-1) - \gamma) = lnk - ln(m-1) , \,\,\,\,\,   (27)
+p_k \approx \frac{1}{1 + m} \frac{(m-1)^{m-1}}{(k-1)^{k-1}}e^{k-m}, \,\,\,\,\,   (27)
 $$
 
-In particular, when m = 2, C = lnk.
+In particular, when m = 2, p_k = (k-1)^(1-k) * e^(k-2) *1/3.
 
 <img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/rBA.png" height="300px" width="400px" />
 
