@@ -326,6 +326,66 @@ $$
 
 The above figure shows (1) the rank-order plot of mixture model when 10*alpha changes from 0 to 10; (2) the OLS fitting of the zipf exponent in log-log axes by total data (blue lines) and tail data (the largest 100 values, green lines). The tail fitting is better because when alpha is large, the distribution only approximates power-law in the tail. (3) The empirical values of power law exponent vs. alpha in two kinds of fittings and the thoretical curve (red line). Note that we fitted the data using rank-order plot (zipf-like), so we need to convert the fitted parameter b into 1+1/b in order to obatin power-law exponent. It turns out that theoretical curve only describes the data when alpha is small. This makes sense because when alpha approaches 1 the power-law distribution degenerates into an exponential distribution (Eq. (18)).
 
+##Mixture between reversed BA and BA model
+
+Now we assume that a new node chooses a low-degree friend with probability alpha and choose a high-degree friend with probability 1-alpha. 
+
+Within the new m links, the following number of links are obtained by all nodes of degree k:
+
+$$
+(\alpha\frac{\frac{1}{k}}{\sum \frac{1}{k}} + (1-\alpha) \frac{k}{\sum k}) n p_k m \approx (\alpha \frac{2m^2 }{k} +(1-\alpha)\frac{k}{2})p_k, \,\,\,\,\,   (31)
+$$
+
+
+We can derive that
+
+$$
+\frac{p_k}{p_{k-1}} =\frac{\frac{2m^2\alpha}{k-1}+\frac{(1-\alpha)(k-1)}{2}}{1+\frac{2m^2\alpha}{k}+\frac{(1-\alpha)k}{2}},\,\,\,\,\,    (32)
+$$
+
+and 
+
+$$
+p_m = \frac{2}{3m\alpha+m+2}. \,\,\,\,\,   (33)
+$$
+
+
+When k is very large, 2m^2alpha/(k-1) approximates 0, so we can write Eq. (34) as
+
+$$
+\frac{p_k}{p_{k-1}} \approx\frac{\frac{(1-\alpha)(k-1)}{2}}{1+\frac{(1-\alpha)k}{2}}=\frac{k-1}{k+\frac{2}{1-\alpha}}.\,\,\,\,\,   (31)
+$$
+
+By unfolding p_k/p_m as a long series like Eq. (10), we derive that
+
+$$
+\frac{p_k}{p_m} =\frac{p_{m+1}}{p_m}\frac{p_{m+2}}{p_{m+1}}...\frac{p_{k-1}}{p_{k-2}}\frac{p_{k}}{p_{k-1}}=\frac{m}{m+1+\frac{2}{1-\alpha}}\frac{m+1}{m+2+\frac{2}{1-\alpha}}...\frac{k-2}{k-1+\frac{2}{1-\alpha}}\frac{k-1}{k+\frac{2}{1-\alpha}}=m(m+1)...\frac{1}{k-1+\frac{2}{1-\alpha}}\frac{1}{k+\frac{2}{1-\alpha}},\,\,\,\,\,   (35)
+$$
+
+in which the number h of items containing k satisfying 
+
+$$
+k+\frac{2}{1-\alpha}-h =k-1.\,\,\,\,\,   (36)
+$$
+
+This is because the numerator of the last item is k-1, and k only takes positive integers, so after going back for h items, k-h+2/(1-alpha) will eventually euqals k-1. Then the entire list will cancel out, only remaining the first h numerators containing m and the last denominators containing k. So the power law distribution has an exponent approximating -h. From Eq. (36) we derive that 
+
+$$
+h = \frac{3-\alpha}{1-\alpha},\,\,\,\,\,   (37)
+$$
+
+So the distribution can be written as
+
+
+$$
+p_k\approx\frac{2m^{\frac{3-\alpha}{1-\alpha}}}{3m\alpha+m+2}k^{-\frac{3-\alpha}{1-\alpha}}.\,\,\,\,\,   (38)
+$$
+
+The following figure demonstrate that the analytical prediction is confirmed by simulation.
+
+![mxedreverseBA](/media/files/2014-06-06-Master-function-and-attention-dynamics/mxedreverseBA.png)
+
+
 ##The dynamics of collective attention in answering questions
 
 A successful Q&A community should balance between answer quality and question coverage. This trade-off is constrained by the limitation of collective attention. To answer difficult/controversial questions, the community must "focus". Meanwhile, to imporve the coverage rate, the community has to assign attention equaly among questions.
