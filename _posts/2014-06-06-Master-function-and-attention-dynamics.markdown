@@ -350,10 +350,10 @@ p_m = \frac{2}{3m\alpha+m+2}. \,\,\,\,\,   (33)
 $$
 
 
-When k is very large, 2m^2alpha/(k-1) approximates 0, so we can write Eq. (34) as
+When k is very large, 2m^2alpha/(k-1) approximates 0, so we can write Eq. (33) as
 
 $$
-\frac{p_k}{p_{k-1}} \approx\frac{\frac{(1-\alpha)(k-1)}{2}}{1+\frac{(1-\alpha)k}{2}}=\frac{k-1}{k+\frac{2}{1-\alpha}}.\,\,\,\,\,   (31)
+\frac{p_k}{p_{k-1}} \approx\frac{\frac{(1-\alpha)(k-1)}{2}}{1+\frac{(1-\alpha)k}{2}}=\frac{k-1}{k+\frac{2}{1-\alpha}}.\,\,\,\,\,   (34)
 $$
 
 By unfolding p_k/p_m as a long series like Eq. (10), we derive that
