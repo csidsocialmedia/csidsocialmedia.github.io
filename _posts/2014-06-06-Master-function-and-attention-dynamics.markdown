@@ -253,7 +253,7 @@ $$
 
 In particular, when m = 2, p_k = (k-1)^(1-k) * e^(k-2) *1/3.
 
-<img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/rBA.png" height="300px" width="400px" />
+<img src="/media/files/2014-06-06-Master-function-and-attention-dynamics/reverseBA.png" height="300px" width="400px" />
 
 The above figure shows the simulation of revsered BA networks of three different sizes. The degree distributions of nodes are always consistent with analytical prediction, independent of simulation size. The Python code for simulation is listed as follows:
 
