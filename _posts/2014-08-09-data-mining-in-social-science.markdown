@@ -20,7 +20,7 @@ for hands-on Python progaming practice on mining various types of data, includin
 Two versions of this course, introductory-level and advanced-level, are provided. The former is opened to undergraduate
 students and the focus is the usage of existed Python modules, such as the [NLTK](http://www.nltk.org/) in text processing and the [NetworkX](https://networkx.github.io/) in network analysis. The latter is open to graduated students, who will learn to develope their own algorithms based on classical data mining methods, such as the Bayesian inference in text processing and the Page Rank Algorithm in network analysis.
 
-##Course Competion 
+##Course Completion 
 
 Studnets are assigned to small groups of 4-5 members and resuqired to complete a data mining project based on their
 own research interest.
@@ -42,8 +42,6 @@ An Introduction to Interactive Programming in Python
 ###Text
 
 Blog clustering
-
-![wordfrequency](/media/files/2014-04-10-Clustering-blogs-by-text/wordfrequency.png) 
 
 Sentimental Analysis
 
