@@ -41,7 +41,9 @@ An Introduction to Interactive Programming in Python
 
 ###Text
 
-Email Filtering 
+Blog clustering
+
+![wordfrequency](/media/files/2014-04-10-Clustering-blogs-by-text/wordfrequency.png) 
 
 Sentimental Analysis
 
