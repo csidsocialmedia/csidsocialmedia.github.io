@@ -13,10 +13,10 @@ Data mining is a rapidly growing field in these years because of its ability to 
 
 This course covers the entire process of scientific data mining, including data collection, analysis, and visualization. The opportunity for hands-on Python programing practice on these tasks will be provided. The overall goal is to equip social science students with programming skills to complete research projects independently.
 
-Course Completion
+##Course Completion
 Students are divided into small groups of 2-3 members and are required to complete small data mining projects based on their own research interest.
 
-Background Requirements
+##Background Requirements
 This course opens to both of undergraduate and graduated students. Students of zero programing background are welcomed.
 
 ##Outline
