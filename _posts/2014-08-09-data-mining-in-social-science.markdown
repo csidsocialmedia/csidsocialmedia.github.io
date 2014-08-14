@@ -9,70 +9,61 @@ tags:
 
 ##Course Description
 
+Data mining is a rapidly growing field in these years because of its ability to provide people powerful tools to extract meaningful information from a sea of data. However, harnessing the power of the data deluge could be challenging to social scientists because of its interdisciplinary nature.
 
-Data mining is a rapidly growing field in these years because of its ability to provide people powerful tools
-to extract meaningful information from a sea of data. However, harnessing the power of the data deluge could
-be challgenging to social scientists because of its interdisciplinary nature. 
+This course covers the entire process of scientific data mining, including data collection, analysis, and visualization. The opportunity for hands-on Python programing practice on these tasks will be provided. The overall goal is to equip social science students with programming skills to complete research projects independently.
 
-This course will examine methods that have been proven to be useful in the study of human behaviors. The opportunity
-for hands-on Python progaming practice on mining various types of data, including text, image, network, audio, and map, will be provided. The overall goal of this course is to equip students with skills to handle all kinds of available data that is relevant to thier reserach. 
+Course Completion
+Students are divided into small groups of 2-3 members and are required to complete small data mining projects based on their own research interest.
 
-Two versions of this course, introductory-level and advanced-level, are provided. The former is opened to undergraduate
-students and the focus is the usage of existed Python modules, such as the [NLTK](http://www.nltk.org/) in text processing and the [NetworkX](https://networkx.github.io/) in network analysis. The latter is open to graduated students, who will learn to develope their own algorithms based on classical data mining methods, such as the Bayesian inference in text processing and the Page Rank Algorithm in network analysis.
-
-##Course Completion 
-
-Studnets are assigned to small groups of 4-5 members and resuqired to complete a data mining project based on their
-own research interest.
-
-##Background Requirements
-
-Being curious about the unknown world (students of zero programing background are welcomed). 
+Background Requirements
+This course opens to both of undergraduate and graduated students. Students of zero programing background are welcomed.
 
 ##Outline
 
-This course contains the following six sections. 
+1.  Introduction
 
-###Introduction
+1.1  Beautiful Data and Human Behavior
 
-Everything is Data: Text, Image, Network, Audio, and Map
+1.2  An Introduction to Python Programming
 
-An Introduction to Interactive Programming in Python 
+2. Data Collection
 
-###Text
+2.1 Connecting to Twitter API
 
-Blog clustering
+2.2 Scraping Articles from The New York Times
 
-Sentimental Analysis
+2.3 Processing the Large Dataset of Stack Exchange 
 
-###Image
+2.4 Retrieving Raw Data from Statistical Figures 
 
-Satellite Image Analysis
+3. Data Analysis
 
-Handwriting recognition
+3.1 Analyzing the Sentiment from Street Harassment Stories
 
-###Network
+3.2 Clustering Countries by National Constitutions
 
-Social Influence Ranking
+3.3 Determining Influential Papers in Citation Networks
 
-Community Detection
+3.4 Measuring the Difficulty of Questions in Q&A sites
 
-Transportation network analysis
+3.5 Discovering the Global Value Chain behind Transaction Networks 
 
-###Audio
+3.6 Modeling the Growth of Cities Using Satellite Images
 
-Noise reduction
+4. Data Visualization
 
-Music Classification
+4.1 Statistical Figures: Scatter Plot, Histogram,  Time Series, Heat Map
 
-###Map
+4.2 Networks
 
-Visualizing Spatial Data
+4.3 Text and Maps
 
-Spatial Prediction of Species Distribution
 
 ##References
 
 [Programming Collective Intelligence: Building Smart Web 2.0 Applications](http://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325)
 
 [Building Machine Learning Systems with Python](http://www.amazon.com/Building-Machine-Learning-Systems-Python/dp/1782161406)
+
+[Web Social Science: Concepts, Data and Tools for Social Scientists in the Digital Age](http://www.amazon.com/Web-Social-Science-Concepts-Scientists/dp/1849204810)
